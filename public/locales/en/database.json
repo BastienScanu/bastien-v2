@@ -1,0 +1,9 @@
+{
+  "title": "Databases",
+  "technos": {
+    "mongo": "MongoDB",
+    "redis": "Redis",
+    "sql": "SQL"
+  },
+  "desc": "Design and architecture of databases, relational and No-SQL databases management."
+}

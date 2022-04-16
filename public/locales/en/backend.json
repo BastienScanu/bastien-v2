@@ -1,0 +1,14 @@
+{
+  "title": "Back-End",
+  "technos": {
+    "es6": "ECMA Script 6",
+    "node": "Node.js",
+    "php": "PHP",
+    "java": "Java",
+    "c": "C/C++",
+    "algo": "Algorithmics",
+    "socket": "socket.io",
+    "python": "Python"
+  },
+  "desc": "Three years of business experience as Node.js (ES6) developer. Good skills in software programming and algorithmics."
+}

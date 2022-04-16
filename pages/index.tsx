@@ -1,27 +1,31 @@
 import type { NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
-import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
+import Home from '../components/Home'
+import About from '../components/About'
+import Skills from '../components/Skills'
+import Experience from '../components/Experience'
 
 
 export async function getStaticProps({ locale }: {locale: string}) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'header', 'footer'])),
+      ...(await serverSideTranslations(locale, ['common', 'home', 'header', 'footer', 'about', 'backend', 'database', 'design', 'devops', 'experience', 'frontend', 'skills'])),
     },
   };
 }
 
-const Home: NextPage = () => {
+const Index: NextPage = () => {
   const { t } = useTranslation('common');
   return (
     <Layout title="Bastien Scanu">
-        <h1 className={styles.title}>
-         {t('hello')}
-        </h1>
+        <Home/>
+        <About/>
+        <Skills/>
+        <Experience/>
     </Layout>
   )
 }
 
-export default Home
+export default Index

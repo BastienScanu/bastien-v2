@@ -4,64 +4,6 @@
   "confirmed": "Confirmed",
   "intermediate": "Intermediate",
   "learning": "Learning",
-  "design": {
-    "title": "Design",
-    "technos": {
-      "toshop": "Photoshop",
-      "sketch": "Sketch",
-      "trator": "Illustrator"
-    },
-    "desc": "Creation of logos for associations, websites templates, t-shirts, stickers..."
-  },
-  "front": {
-    "title": "Front-End",
-    "technos": {
-      "html": "HTML5",
-      "css": "CSS3",
-      "es6": "ECMA Script 6",
-      "angular": "AngularJS",
-      "react": "React",
-      "sass": "SASS",
-      "jquery": "jQuery"
-    },
-    "desc": "Very good knowledge of web languages HTML5, CSS3 and Javascript. Mastery of modern frameworks  such as AngularJS and React."
-  },
-  "back": {
-    "title": "Back-End",
-    "technos": {
-      "es6": "ECMA Script 6",
-      "node": "Node.js",
-      "php": "PHP",
-      "java": "Java",
-      "c": "C/C++",
-      "algo": "Algorithmics",
-      "socket": "socket.io",
-      "python": "Python"
-    },
-    "desc": "Three years of business experience as Node.js (ES6) developer. Good skills in software programming and algorithmics."
-  },
-  "database": {
-    "title": "Databases",
-    "technos": {
-      "mongo": "MongoDB",
-      "redis": "Redis",
-      "sql": "SQL"
-    },
-    "desc": "Design and architecture of databases, relational and No-SQL databases management."
-  },
-  "os": {
-    "title": "Operating Systems",
-    "technos": {
-      "mac": "MacOS",
-      "linux": "Linux",
-      "win": "Windows",
-      "shell": "Shell",
-      "docker": "Docker"
-    },
-    "desc": "Used to work with the three main operating systems. Use of Docker in the professional context."
-  },
-  "dev": "Programming",
-  "web": "Web Development",
   "languages": {
       "title": "Languages",
       "fr": "French",
