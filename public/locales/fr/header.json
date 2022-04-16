@@ -1,3 +1,7 @@
 {
-    "home": "Accueil"
+  "home": "Accueil",
+  "about": "À propos",
+  "skills": "Compétences",
+  "experience": "Parcours",
+  "contact": "Contact"
 }

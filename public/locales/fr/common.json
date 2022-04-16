@@ -1,3 +1,8 @@
 {
-    "hello": "Salut!"
+  "button": {
+    "linkedin": "Profil LinkedIn",
+    "mail": "M'envoyer un mail",
+    "resume": "Télécharger mon CV"
+  },
+  "close": "Fermer"
 }

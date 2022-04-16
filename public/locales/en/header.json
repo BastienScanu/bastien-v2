@@ -1,3 +1,7 @@
 {
-    "home": "Home"
+  "home": "Home",
+  "about": "About",
+  "skills": "Skills",
+  "experience": "Experience",
+  "contact": "Contact"
 }

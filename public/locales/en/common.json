@@ -1,3 +1,8 @@
 {
-    "hello": "Hello!"
+  "button": {
+    "linkedin": "LinkedIn Profile",
+    "mail": "Send me a mail",
+    "resume": "Download my resume"
+  },
+  "close": "Close"
 }

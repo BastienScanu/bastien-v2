@@ -1,3 +1,8 @@
 {
-    "footer": "Footer"
+  "copyright": "Personal website made by Bastien Scanu",
+  "linkedin": "My LinkedIn profile",
+  "github": "My GitHub profile",
+  "about": "About",
+  "replay": "Replay",
+  "credits": "Thank you for your visit ! This website has been created by Bastien Scanu. Logo, profile picture, icons 'qualities' made by Bastien Scanu. All the photographies on this website are in the public domain. Icons from Google Material Design and FontAwesome. The website is still being created, so come back to see new features ! May the force be with you."
 }

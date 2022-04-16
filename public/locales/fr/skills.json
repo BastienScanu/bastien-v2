@@ -1,0 +1,85 @@
+{
+  "title": "Compétences",
+  "expert": "Expert",
+  "confirmed": "Confirmé",
+  "intermediate": "Intermediaire",
+  "learning": "Apprentissage",
+  "design": {
+    "title": "Design",
+    "technos": {
+      "toshop": "Photoshop",
+      "sketch": "Sketch",
+      "trator": "Illustrator"
+    },
+    "desc": "Réalisation de logos pour des associations, maquettes de sites webs, t-shirts, autocollants..."
+  },
+  "front": {
+    "title": "Front-End",
+    "technos": {
+      "html": "HTML5",
+      "css": "CSS3",
+      "es6": "ECMA Script 6",
+      "angular": "AngularJS",
+      "react": "React",
+      "sass": "SASS",
+      "jquery": "jQuery"
+    },
+    "desc": "Très bonne connaissance des langages du web HTML5, CSS3 et Javascript. Maîtrise de frameworks modernes tels que AngularJS et React."
+  },
+  "back": {
+    "title": "Back-End",
+    "technos": {
+      "es6": "ECMA Script 6",
+      "node": "Node.js",
+      "php": "PHP",
+      "java": "Java",
+      "c": "C/C++",
+      "algo": "Algorithmique",
+      "socket": "socket.io",
+      "python": "Python"
+    },
+    "desc": "Trois ans d'expérience en entreprise en tant que développeur Node.js (ES6). Bonnes compétences en programmation logicielle et algorithmique."
+  },
+  "database": {
+    "title": "Base de données",
+    "technos": {
+      "mongo": "MongoDB",
+      "redis": "Redis",
+      "sql": "SQL"
+    },
+    "desc": "Conception et architecture de base de données, gestion de bases de données relationnelles mais aussi No-SQL."
+  },
+  "os": {
+    "title": "Systèmes d'exploitation",
+    "technos": {
+      "mac": "MacOS",
+      "linux": "Linux",
+      "win": "Windows",
+      "shell": "Shell",
+      "docker": "Docker"
+    },
+    "desc": "Habitué à travailler sous les trois principaux systèmes d'exploitation. Utilisation de Docker dans le cadre professionnel."
+  },
+  "soft": {
+    "title": "Compétences transversales",
+    "skills": {
+      "team": "Travail en Équipe",
+      "agility": "Agilité",
+      "autonomy": "Autonomie",
+      "communication": "Communication",
+      "creativity": "Créativité",
+      "curiosity": "Curiosité",
+      "project": "Gestion de Projet"
+    }
+  },
+  "dev": "Programmation",
+  "web": "Développement Web",
+  "languages": {
+    "title": "Langues",
+    "fr": "Français",
+    "en": "Anglais",
+    "es": "Espagnol",
+    "native": "Langue maternelle",
+    "fpp": "Compétence professionnelle complète"
+  }
+}

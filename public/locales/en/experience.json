@@ -1,0 +1,97 @@
+{
+  "title": "Experience",
+  "baseline": "What I've done",
+  "company": "Company",
+  "school": "School",
+  "course": "Course",
+  "mission": "Mission",
+  "website": "Website",
+  "umi": {
+    "date": "Since August 2015",
+    "company": "United Motion Ideas",
+    "job": "Design & Development Engineer",
+    "desc": "UMI is a french start-up that helps companies to increase the value of their innovation, by providing the a rapid and clear feedback from the market",
+    "mission": "My job is to develop the search module of professionals, to target and contact experts with specific skills all around the world. I'm working with full autonomy on this module, which is critical for the good functioning of the platform.",
+    "type": "work",
+    "location": "Lyon",
+    "website": "https://www.umi.us",
+    "maps": "https://www.google.fr/maps/place/United+Motion+Ideas/@45.788595,4.8052027,17z/data=!4m5!3m4!1s0x0:0xd1b60a0ec73d41c7!8m2!3d45.7884161!4d4.806076"
+  },
+  "umi2": {
+    "date": "August 2014 - June 2015",
+    "company": "United Motion Ideas",
+    "job": "Final year internship",
+    "desc": "UMI is a french start-up that helps companies to increase the value of their innovation, by providing the a rapid and clear feedback from the market",
+    "mission": "During this internship, I designed and implemented a real-time notifications module for the UMI platform.",
+    "type": "work",
+    "location": "Lyon",
+    "website": "https://www.umi.us",
+    "maps": "https://www.google.fr/maps/place/United+Motion+Ideas/@45.788595,4.8052027,17z/data=!4m5!3m4!1s0x0:0xd1b60a0ec73d41c7!8m2!3d45.7884161!4d4.806076"
+  },
+  "mozilla": {
+    "date": "June 2013",
+    "company": "Mozilla Firefox",
+    "job": "Contribution project to the free software",
+    "desc": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation, with the help of thousands of volunteers.",
+    "mission": "Within a team of 4 students and under the supervision of a Mozilla Foundation developer, we corrected several bugs and implemented new functionalities related to the media code of the browser.",
+    "type": "work",
+    "location": "Grenoble",
+    "website": "https://www.mozilla.org/fr/firefox/new/",
+    "maps": "https://www.google.fr/maps/place/Ensimag/@45.1934612,5.7660772,17z/data=!3m1!4b1!4m5!3m4!1s0x478af5a7a840ceb7:0x56b8d2dc6bcdecf5!8m2!3d45.1934574!4d5.7682659"
+  },
+  "stm": {
+    "date": "July 2012 - August 2012",
+    "company": "ST Microelectronics",
+    "job": "Cleanroom operator internship",
+    "desc": "STMicroelectronics is a multinational company developing, manufacturing and commercializing semiconductor chips. It is one of the world leaders in semiconductors manufacturing.",
+    "mission": "Working in the cleanroom Crolles 300, on the production chain of 300mm wafers. My job was on the speedline, doing the follow-up of the urgent batches of the production.",
+    "type": "work",
+    "location": "Crolles",
+    "website": "http://www.st.com/content/st_com/en/about/careers/st-locations/emea/france/crolles.html",
+    "maps": "https://www.google.fr/maps/place/STMicroelectronics/@45.268018,5.8812696,17z/data=!4m5!3m4!1s0x478a599bc746f64f:0xcb05e1c6c99656a3!8m2!3d45.2680142!4d5.8834583"
+  },
+  "upc": {
+    "date": "2013 - 2014",
+    "company": "FIB BarcelonaTech",
+    "job": "Master in Informatics",
+    "desc": "The Polytechnic University of Catalonia (BarcelonaTech) is the largest scientific and technical university in Catalonia, Spain. The Informatics Faculty is the department dedicated to computer science.",
+    "mission": "I was in an exchange program during two semesters, following the Master in Innovation and Research in Informatics: computer networks, programming (Javascript, Erlang), but also Machine Learning.",
+    "type": "school",
+    "location": "Barcelona",
+    "website": "http://www.fib.upc.edu/",
+    "maps": "https://www.google.fr/maps/place/UPC+Facultat+d'Inform%C3%A0tica+de+Barcelona/@41.3894881,2.1111972,17z/data=!3m1!4b1!4m5!3m4!1s0x12a498509f468895:0xf3ab8ba023c5cd56!8m2!3d41.3894841!4d2.1133859"
+  },
+  "imag": {
+    "date": "2012 - 2013",
+    "company": "Grenoble INP Ensimag",
+    "job": "Second year of Engineering school",
+    "desc": "The École nationale supérieure d'informatique et mathématiques appliquées, or Grenoble INP - Ensimag, is a prestigious French Grande École part of the Institut polytechnique de Grenoble. The school is one of the top French educational institutions and specializes in Computer science, Applied Mathematics and Telecommunications.",
+    "mission": "I could improve at the ENSIMAG my skills in software programming, network security and database management systems.",
+    "type": "school",
+    "location": "Grenoble",
+    "website": "http://ensimag.grenoble-inp.fr/",
+    "maps": "https://www.google.fr/maps/place/Ensimag/@45.1934612,5.7660772,17z/data=!3m1!4b1!4m5!3m4!1s0x478af5a7a840ceb7:0x56b8d2dc6bcdecf5!8m2!3d45.1934574!4d5.7682659"
+  },
+  "phelma": {
+    "date": "2011 - 2012",
+    "company": "Grenoble INP Phelma",
+    "job": "First year of Engineering school",
+    "desc": "The École Nationale Supérieure de Physique, Électronique et Matériaux (Phelma) is a prestigious French Grande École part of the Institut polytechnique de Grenoble. The school specializes in physics, electronics and materials.",
+    "mission": "My core curriculum was PET (Physics, Electronics, Telecoms), I followed classes about electronics, C programming and signal treatment.",
+    "type": "school",
+    "location": "Grenoble",
+    "website": "http://phelma.grenoble-inp.fr/",
+    "maps": "https://www.google.fr/maps/place/Grenoble+INP+-+Phelma/@45.1950301,5.7079163,17z/data=!3m1!4b1!4m5!3m4!1s0x478af3802e49a815:0x3d68cc9c1b2e9fb6!8m2!3d45.1950263!4d5.710105"
+  },
+  "prepa": {
+    "date": "2009 - 2011",
+    "company": "Lycée Claude Fauriel",
+    "job": "Preparatory classes, Maths/Physics",
+    "desc": "The Claude Fauriel highschool is a public highschool in Saint-Etienne, that also offers Higher School Preparatory Classes.",
+    "mission": "Higher School Preparatory Classes are part of the French post-secondary education system. They consist of two very intensive years which act as a preparatory course with the main goal of training students for enrollment in one of the Grandes Écoles.",
+    "type": "school",
+    "location": "Saint-Etienne",
+    "website": "http://www2.ac-lyon.fr/etab/lycees/lyc-42/fauriel/spip.php?rubrique164&lang=fr",
+    "maps": "https://www.google.fr/maps/place/Lyc%C3%A9e+Claude+Fauriel/@45.4380835,4.3917392,17z/data=!3m1!4b1!4m5!3m4!1s0x47f5a954ccca3bf3:0xe95c5fe3ee0f0504!8m2!3d45.4380798!4d4.3939279"
+  }
+}

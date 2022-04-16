@@ -1,3 +1,8 @@
 {
-    "footer": "Pied de page"
+  "copyright": "Site personnel réalisé par Bastien Scanu",
+  "linkedin": "Mon profil LinkedIn",
+  "github": "Mon profil GitHub",
+  "about": "À propos",
+  "replay": "Revoir",
+  "credits": "Merci de votre visite ! Ce site a été réalisé par Bastien Scanu. Logo, photo de profil, icônes 'qualités' réalisées par Bastien Scanu. Toutes les photos présentes sur le site sont libres de droit. Icônes Google Material Design et FontAwesome. Site toujours en cours de création, revenez pour voir les nouveautés ! Que la force soit avec vous."
 }
