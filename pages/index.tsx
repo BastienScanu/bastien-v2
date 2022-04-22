@@ -5,13 +5,13 @@ import Layout from '../components/Layout'
 import Home from '../components/Home'
 import About from '../components/About'
 import Skills from '../components/Skills'
-import Experience from '../components/Experience'
+import ExperienceSection from '../components/ExperienceSection'
 
 
 export async function getStaticProps({ locale }: {locale: string}) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'home', 'header', 'footer', 'about', 'backend', 'database', 'design', 'devops', 'experience', 'frontend', 'skills'])),
+      ...(await serverSideTranslations(locale, ['common', 'home', 'header', 'footer', 'about', 'back', 'database', 'design', 'devops', 'experience', 'front', 'skills'])),
     },
   };
 }
@@ -23,7 +23,7 @@ const Index: NextPage = () => {
         <Home/>
         <About/>
         <Skills/>
-        <Experience/>
+        <ExperienceSection/>
     </Layout>
   )
 }

@@ -1,0 +1,49 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/fira-sans.min.css");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-width: 1800px;
+}
+
+main {
+  width: auto;
+  margin: auto;
+  padding: 0 50px;
+}
+
+h1 {
+  font-family: 'Plus Jakarta Display';
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Plus Jakarta Display';
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #414141;
+}
+
+h2::before  {
+  display: inline-block;
+  content: "";
+  border-bottom: .2rem solid #9E9E9E;
+  width: 1.5rem;
+  margin: 0 1rem;
+}
+
+h2::after {
+    display: inline-block;
+    content: "";
+    border-bottom: .2rem solid #9E9E9E;
+    width: 10rem;
+    margin: 0 1rem;
+}

@@ -5,11 +5,11 @@ const About = () => {
   const { t } = useTranslation('about')
 
   return (
-    <div id="about">
+    <section id="about">
       <h1>
         {t('hello')}
       </h1>
-    </div>
+    </section>
   )
 }
 

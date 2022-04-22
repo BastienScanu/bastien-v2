@@ -1,9 +1,9 @@
 {
   "title": "Design",
   "technos": {
-    "toshop": "Photoshop",
+    "photoshop": "Photoshop",
     "sketch": "Sketch",
-    "trator": "Illustrator"
+    "figma": "Figma"
   },
   "desc": "Creation of logos for associations, websites templates, t-shirts, stickers..."
 }
