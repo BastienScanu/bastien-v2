@@ -1,25 +1,25 @@
 import { useTranslation } from 'next-i18next';
 import * as React from 'react'
-import Backend from './Backend';
-import Database from './Database';
-import Design from './Design';
-import Devops from './Devops';
-import Frontend from './Frontend';
+import SkillSection from './SkillSection';
+import skillsData from '../public/data/skillsData'
 
 const Skills = () => {
   const { t } = useTranslation('skills')
 
   return (
-    <div id="skills">
+    <section id="skills">
       <h1>
         {t('title')}
       </h1>
-      <Design/>
-      <Frontend/>
-      <Backend/>
-      <Database/>
-      <Devops/>
-    </div>
+      {skillsData.map(skill => {
+        return (
+          <SkillSection
+            key={skill.name}
+            skill={skill}
+          />
+        );
+      })}
+    </section>
   )
 }
 
