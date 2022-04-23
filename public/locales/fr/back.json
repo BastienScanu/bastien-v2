@@ -1,12 +1,10 @@
 {
   "title": "Back-End",
   "technos": {
-    "es6": "ECMA Script 6",
-    "node": "Node.js",
-    "php": "PHP",
-    "java": "Java",
-    "c": "C/C++",
-    "algo": "Algorithmique",
+    "nodejs": "Node.js",
+    "spring": "Java Spring Boot",
+    "express": "Express.js",
+    "kafka": "Apache Kafka",
     "socket": "socket.io",
     "python": "Python"
   },

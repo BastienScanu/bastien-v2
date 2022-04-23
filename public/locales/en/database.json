@@ -3,7 +3,7 @@
   "technos": {
     "mongo": "MongoDB",
     "redis": "Redis",
-    "sql": "SQL"
+    "postgre": "PostgreSQL"
   },
   "desc": "Design and architecture of databases, relational and No-SQL databases management."
 }

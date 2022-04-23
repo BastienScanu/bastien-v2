@@ -1,10 +1,7 @@
 {
   "title": "Operating Systems",
   "technos": {
-    "mac": "MacOS",
-    "linux": "Linux",
-    "win": "Windows",
-    "shell": "Shell",
+    "bash": "Bash / SSH",
     "docker": "Docker"
   },
   "desc": "Used to work with the three main operating systems. Use of Docker in the professional context."

@@ -3,11 +3,10 @@
   "technos": {
     "html": "HTML5",
     "css": "CSS3",
-    "es6": "ECMA Script 6",
+    "next": "Next.js ",
     "angular": "AngularJS",
     "react": "React",
-    "sass": "SASS",
-    "jquery": "jQuery"
+    "sass": "SASS"
   },
   "desc": "Very good knowledge of web languages HTML5, CSS3 and Javascript. Mastery of modern frameworks  such as AngularJS and React."
 }

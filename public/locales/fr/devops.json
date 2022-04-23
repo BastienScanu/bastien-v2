@@ -1,10 +1,7 @@
 {
   "title": "Systèmes d'exploitation",
   "technos": {
-    "mac": "MacOS",
-    "linux": "Linux",
-    "win": "Windows",
-    "shell": "Shell",
+    "bash": "Bash / SSH",
     "docker": "Docker"
   },
   "desc": "Habitué à travailler sous les trois principaux systèmes d'exploitation. Utilisation de Docker dans le cadre professionnel."

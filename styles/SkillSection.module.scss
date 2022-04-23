@@ -1,0 +1,15 @@
+.logo {
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    opacity: 80%;
+}
+
+.logo:hover {
+    filter: none;
+    opacity: 100%;
+}
+
+.logoFrame {
+    display: inline-block;
+    height: 64px;
+}
