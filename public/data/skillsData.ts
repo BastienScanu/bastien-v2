@@ -11,35 +11,35 @@ const skillsData: Skill[] = [
     },{
         "name": "front",
         "technos": [
+            "angular",
+            "next",
+            "react",
             "html",
             "css",
-            "next",
-            "angular",
-            "react",
             "sass",
         ],
     },{
         "name": "back",
         "technos": [
             "nodejs",
-            "spring",
-            "kafka",
-            "socket",
             "python",
+            "spring",
+            "socket",
             "express",
+            "kafka",
         ],
     },{
         "name": "database",
         "technos": [
             "mongo",
-            "redis",
             "postgre",
+            "redis",
         ],
     },{
         "name": "devops",
         "technos": [
+            "docker",
             "bash",
-            "docker"
         ]
     }
 ]

@@ -1,12 +1,12 @@
 .logo {
     filter: grayscale(100%);
     transition: all 0.3s ease;
-    opacity: 80%;
+    opacity: 0.8
 }
 
 .logo:hover {
     filter: none;
-    opacity: 100%;
+    opacity: 1;
 }
 
 .logoFrame {

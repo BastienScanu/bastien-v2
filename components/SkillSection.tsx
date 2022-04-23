@@ -20,7 +20,7 @@ const SkillSection = ({skill}: {skill: Skill}) => {
           {skill.technos.map((techno: string) => {
             return (
               <div key={techno} className={styles.logoFrame}>
-                <Image src={`/images/technos/${techno}-color.svg`} className={styles.logo}
+                <Image src={`/images/technos/${techno}.svg`} className={styles.logo}
                 height={64} width={128} alt = {techno + " logo"} />
               </div>
             );
