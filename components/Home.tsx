@@ -6,11 +6,13 @@ const Home = () => {
   const { t } = useTranslation('home');
 
   return (
-    <p id="home" className={styles.title}>
-      {t('hi')}<br/>
-      {t('name')}<br/>
-      {t('job')}
-    </p>
+    <section>
+      <p id="home" className={styles.title}>
+        {t('hi')}<br/>
+        {t('name')}<br/>
+        {t('job')}
+      </p>
+    </section>
   )
 }
 
