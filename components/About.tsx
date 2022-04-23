@@ -6,9 +6,12 @@ const About = () => {
 
   return (
     <section id="about">
-      <h1>
-        {t('hello')}
-      </h1>
+      <p>
+        {t('pitch')}
+      </p>
+      <p>
+        {t('looking')}
+      </p>
     </section>
   )
 }
