@@ -10,4 +10,10 @@
 
 .frame {
     height: 33vw;
-  }
+}
+
+.illustration {
+    position: relative;
+    top: -33vw;
+    z-index: 2;
+}

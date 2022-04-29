@@ -5,10 +5,10 @@ export class RandomBlob {
 
     constructor(size: number) {
       this.zones = [
-        {xmin: 15, xmax: size * 0.15, ymin: size * 0.3, ymax: size * 0.7},
-        {xmin: size * 0.3, xmax: size * 0.7, ymin: size * 0.85, ymax: size - 15},
-        {xmin: size * 0.85, xmax: size - 15, ymin: size * 0.3, ymax: size * 0.7},
-        {xmin: size * 0.3, xmax: size * 0.7, ymin: 15, ymax: size * 0.15},
+        {xmin: 0, xmax: size * 0.1, ymin: size * 0.3, ymax: size * 0.7},
+        {xmin: size * 0.3, xmax: size * 0.7, ymin: size * 0.9, ymax: size},
+        {xmin: size * 0.9, xmax: size, ymin: size * 0.3, ymax: size * 0.7},
+        {xmin: size * 0.3, xmax: size * 0.7, ymin: 0, ymax: size * 0.1},
       ]
     }
 

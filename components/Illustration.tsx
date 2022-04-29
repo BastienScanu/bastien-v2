@@ -1,9 +1,10 @@
 import * as React from 'react'
+import Image from 'next/image'
 import styles from '../styles/Blob.module.scss'
 import { RandomBlob } from '../models/RandomBlob';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-const Blob = () => {
+const Illustration = ({name}: {name: string}) => {
   const size = 200
   const blob = new RandomBlob(size);
   blob.generateCurvyShape();
@@ -16,7 +17,7 @@ const Blob = () => {
 
 
   return (
-    <div className={styles.frame} onClick={resetPath}>    
+    <div className={styles.frame} onClick={resetPath}>
       <svg width="100%" height="100%" viewBox={"0 0 " + size + " " + size} xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink" className={styles.svg}>
 
@@ -32,9 +33,13 @@ const Blob = () => {
           </linearGradient>
         </defs>
       </svg>
+      <div className={styles.illustration}>
+        <Image src={`/images/layout/${name}.svg`} height="30vw" width="30vw"
+          layout="responsive" alt = {name + " isometric illustration"}/>
+      </div>
     </div>
 
   )
 }
 
-export default Blob
+export default Illustration
