@@ -52,7 +52,8 @@ h2 {
 
 .separationLine {
   border-bottom: .2rem solid #9E9E9E;
-  flex-grow: 1;
+  flex-grow: 1;  position: relative;
+  top: -0.3rem;
 
   &.small {
     width: 2rem;
