@@ -1,12 +1,30 @@
 {
   "title": "Back-End",
   "technos": {
-    "nodejs": "Node.js",
-    "spring": "Java Spring Boot",
-    "express": "Express.js",
-    "kafka": "Apache Kafka",
-    "socket": "socket.io",
-    "python": "Python"
+    "nodejs": {
+        "name": "Node.js",
+        "level": "Good"
+    },
+    "spring": {
+        "name": "Java Spring Boot",
+        "level": "Good"
+    },
+    "express": {
+        "name": "Express.js",
+        "level": "Good"
+    },
+    "kafka": {
+        "name": "Apache Kafka",
+        "level": "Good"
+    },
+    "socket": {
+        "name": "socket.io",
+        "level": "Good"
+    },
+    "python": {
+        "name": "Python",
+        "level": "Good"
+    }
   },
   "desc": "Three years of business experience as Node.js (ES6) developer. Good skills in software programming and algorithmics."
 }

@@ -1,6 +1,8 @@
+import Techno from "./Techno";
+
 type Skill = {
     name: string,
-    technos: string[]
+    technos: Array<Techno>
 }
 
 export default Skill;

@@ -1,8 +1,14 @@
 {
   "title": "Operating Systems",
   "technos": {
-    "bash": "Bash / SSH",
-    "docker": "Docker"
+    "bash": {
+        "name": "Bash / SSH",
+        "level": "Good"
+    },
+    "docker": {
+        "name": "Docker",
+        "level": "Good"
+    }
   },
   "desc": "Used to work with the three main operating systems. Use of Docker in the professional context."
 }

@@ -1,9 +1,18 @@
 {
   "title": "Design",
   "technos": {
-    "photoshop": "Photoshop",
-    "sketch": "Sketch",
-    "figma": "Figma"
+    "photoshop": {
+        "name": "Photoshop",
+        "level": "Bien"
+    },
+    "sketch": {
+        "name": "Sketch",
+        "level": "Bien"
+    },
+    "figma": {
+        "name": "Figma",
+        "level": "Bien"
+    }
   },
   "desc": "Réalisation de logos pour des associations, maquettes de sites webs, t-shirts, autocollants..."
 }

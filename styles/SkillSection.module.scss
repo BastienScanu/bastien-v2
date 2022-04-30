@@ -13,3 +13,28 @@
     display: inline-block;
     height: 64px;
 }
+
+.logoFrame:hover {
+    position: relative;
+    top: -1px;
+    transition: all 0.2s ease;
+}
+
+.progressTitle {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+.progressBar {
+    height: 12px;
+    max-width: 300px;
+    background: #E0E0E0;
+    border-radius: 6px;
+
+    .progressFill {
+        height: 12px;
+        background: linear-gradient(180deg, #4EC417 0%, #35A500 100%);
+        border-radius: 6px;
+        transition: all 0.4s ease;
+    }
+}
