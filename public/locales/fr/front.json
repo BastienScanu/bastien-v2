@@ -1,30 +1,4 @@
 {
   "title": "Front-End",
-  "technos": {
-    "html": {
-        "name": "HTML5",
-        "level": "Bien"
-    },
-    "css": {
-        "name": "CSS3",
-        "level": "Bien"
-    },
-    "next": {
-        "name": "Next.js",
-        "level": "Bien"
-    },
-    "angular": {
-        "name": "AngularJS",
-        "level": "Bien"
-    },
-    "react": {
-        "name": "React",
-        "level": "Bien"
-    },
-    "sass": {
-        "name": "SASS",
-        "level": "Bien"
-    }
-  },
   "desc": "Très bonne connaissance des langages du web HTML5, CSS3 et Javascript. Maîtrise de frameworks modernes tels que AngularJS et React."
 }

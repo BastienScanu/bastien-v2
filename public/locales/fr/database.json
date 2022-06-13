@@ -1,18 +1,4 @@
 {
   "title": "Bases de données",
-  "technos": {
-    "mongo": {
-        "name": "MongoDB",
-        "level": "Bien"
-    },
-    "redis": {
-        "name": "Redis",
-        "level": "Bien"
-    },
-    "postgre": {
-        "name": "PostgreSQL",
-        "level": "Bien"
-    }
-  },
   "desc": "Conception et architecture de base de données, gestion de bases de données relationnelles mais aussi No-SQL."
 }

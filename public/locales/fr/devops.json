@@ -1,14 +1,4 @@
 {
   "title": "Systèmes d'exploitation",
-  "technos": {
-    "bash": {
-        "name": "Bash / SSH",
-        "level": "Bien"
-    },
-    "docker": {
-        "name": "Docker",
-        "level": "Bien"
-    }
-  },
   "desc": "Habitué à travailler sous les trois principaux systèmes d'exploitation. Utilisation de Docker dans le cadre professionnel."
 }

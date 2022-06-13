@@ -1,18 +1,4 @@
 {
   "title": "Databases",
-  "technos": {
-    "mongo": {
-        "name": "MongoDB",
-        "level": "Good"
-    },
-    "redis": {
-        "name": "Redis",
-        "level": "Good"
-    },
-    "postgre": {
-        "name": "PostgreSQL",
-        "level": "Good"
-    }
-  },
   "desc": "Design and architecture of databases, relational and No-SQL databases management."
 }

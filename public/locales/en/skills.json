@@ -3,7 +3,6 @@
   "expert": "Expert",
   "confirmed": "Confirmed",
   "intermediate": "Intermediate",
-  "learning": "Learning",
   "languages": {
       "title": "Languages",
       "fr": "French",
@@ -11,19 +10,5 @@
       "es": "Spanish",
       "native": "Mother tongue",
       "fpp": "Full professional proficiency"
-    },
-  "soft": {
-    "title": "Soft skills",
-    "skills": {
-      "team": "Teamwork",
-      "agility": "Agility",
-      "autonomy": "Autonomy",
-      "communication": "Communication",
-      "creativity": "Creativity",
-      "curiosity": "Curiosity",
-      "project": "Project Management"
     }
-  },
-  "dev": "Programming",
-  "web": "Web Development"
 }

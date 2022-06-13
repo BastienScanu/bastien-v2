@@ -4,20 +4,6 @@
   "confirmed": "Confirmé",
   "intermediate": "Intermediaire",
   "learning": "Apprentissage",
-  "soft": {
-    "title": "Compétences transversales",
-    "skills": {
-      "team": "Travail en Équipe",
-      "agility": "Agilité",
-      "autonomy": "Autonomie",
-      "communication": "Communication",
-      "creativity": "Créativité",
-      "curiosity": "Curiosité",
-      "project": "Gestion de Projet"
-    }
-  },
-  "dev": "Programmation",
-  "web": "Développement Web",
   "languages": {
     "title": "Langues",
     "fr": "Français",

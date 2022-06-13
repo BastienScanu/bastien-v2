@@ -5,36 +5,45 @@ const skillsData: Skill[] = [
         "name": "design",
         "technos": [    
             {
-                "name": "photoshop",
+                "key": "photoshop",
+                "name": "Photoshop",
                 "value": 70
             }, {
-                "name": "sketch",
-                "value": 80
+                "key": "sketch",
+                "name": "Sketch",
+                "value": 75
             }, {
-                "name": "figma",
-                "value": 85
+                "key": "figma",
+                "name": "Figma",
+                "value": 80
             },
         ]
     },{
         "name": "front",
         "technos": [
             {
-                "name": "angular",
-                "value": 90
+                "key": "angular",
+                "name": "Angular",
+                "value": 95
             }, {
-                "name": "next",
+                "key": "next",
+                "name": "Next.js",
                 "value": 70
             }, {
-                "name": "react",
-                "value": 70
+                "key": "react",
+                "name": "React",
+                "value": 80
             }, {
-                "name": "html",
+                "key": "html",
+                "name": "HTML5",
                 "value": 100
             }, {
-                "name": "css",
+                "key": "css",
+                "name": "CSS3",
                 "value": 90
             }, {
-                "name": "sass",
+                "key": "sass",
+                "name": "Sass",
                 "value": 90
             },
         ],
@@ -42,22 +51,28 @@ const skillsData: Skill[] = [
         "name": "back",
         "technos": [
             {
-                "name": "nodejs",
+                "key": "nodejs",
+                "name": "Node.js",
                 "value": 100
             }, {
-                "name": "python",
+                "key": "python",
+                "name": "Python",
                 "value": 70
             }, {
-                "name": "spring",
+                "key": "spring",
+                "name": "Java Spring Boot",
                 "value": 80
             }, {
-                "name": "socket",
+                "key": "socket",
+                "name": "Socket.io",
                 "value": 70
             }, {
-                "name": "express",
+                "key": "express",
+                "name": "Express.js",
                 "value": 90
             }, {
-                "name": "kafka",
+                "key": "kafka",
+                "name": "Apache Kafka",
                 "value": 70
             },
         ],
@@ -65,13 +80,16 @@ const skillsData: Skill[] = [
         "name": "database",
         "technos": [
             {
-                "name": "mongo",
+                "key": "mongo",
+                "name": "MongoDB",
                 "value": 90
             }, {
-                "name": "postgre",
+                "key": "postgre",
+                "name": "PostgreSQL",
                 "value": 80
             }, {
-                "name": "redis",
+                "key": "redis",
+                "name": "Redis",
                 "value": 70
             },
         ],
@@ -79,10 +97,12 @@ const skillsData: Skill[] = [
         "name": "devops",
         "technos": [
             {
-                "name": "docker",
+                "key": "docker",
+                "name": "Docker",
                 "value": 70
             }, {
-                "name": "bash",
+                "key": "bash",
+                "name": "Bash / SSH",
                 "value": 70
             },
         ]

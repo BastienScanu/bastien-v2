@@ -1,4 +1,5 @@
 type Techno = {
+    key: string,
     name: string,
     value: number
 }
