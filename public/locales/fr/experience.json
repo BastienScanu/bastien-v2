@@ -1,97 +1,106 @@
 {
   "title": "Parcours",
-  "baseline": "J'ai fait plein de trucs cools",
-  "company": "Entreprise",
-  "school": "Ecole",
-  "course": "Cours",
-  "mission": "Mission",
+  "company": {
+    "type": "Entreprise",
+    "activity": "Mission"
+  },
+  "school": {
+    "type": "Ecole",
+    "activity": "Cours"
+  },
   "website": "Site Internet",
+  "ed": {
+    "date": "Depuis Janvier 2022",
+    "company": "Energies Demain",
+    "job": "Développeur web full-stack",
+    "desc": "Accélérateur d’idées, conseil et acteur de terrain, Énergies Demain œuvre en faveur de la transition sociétale et écologique.Nous plaçons l’humain au cœur de notre projet d’entreprise.",
+    "mission": {
+      "desc": "Je travaille au sein de l'équipe développement web, pour concevoir et faire évoluer les outils web afin qu'ils répondent au mieux aux besoins de nos clients :",
+      "ul1": "Implémentation de nouvelles fonctionnalités et refonte de l’interface de l’outil d’ERP ",
+      "ul2": "Refactoring et modernisation du front-end de l’outil de cartographie et visualisation de données"
+    },
+    "website": "https://www.energies-demain.com"
+  },
   "umi": {
-    "date": "Depuis Juillet 2015",
+    "date": "Juillet 2015 - Décembre 2021",
     "company": "United Motion Ideas",
     "job": "Ingénieur conception et développement",
-    "desc": "Start-up lyonnaise qui évolue dans le domaine de la valorisation de l'innovation. Via sa plateforme web, elle permet aux entreprises innovantes d'avoir un retour mondial rapide des professionnels du marché.",
-    "mission": "Mon rôle est de développer le module de recherche des professionnels permettant de cibler et contacter des professionnels dans le monde entier, en fonction de leurs compétences. Je travaille en autonomie sur ce module, qui a un rôle crucial pour le fonctionnement de la plateforme.",
-    "type": "work",
-    "location": "Lyon",
-    "website": "https://www.umi.us",
-    "maps": "https://www.google.fr/maps/place/United+Motion+Ideas/@45.788595,4.8052027,17z/data=!4m5!3m4!1s0x0:0xd1b60a0ec73d41c7!8m2!3d45.7884161!4d4.806076"
+    "desc": "UMI est l’outil de test marché dédié au succès de vos projets d’innovation. Nous boostons les interactions avec les acteurs de votre marché, parmi le milliard de professionnels atteignables grâce à nos algorithmes.",
+    "mission": {
+      "desc": "En tant que développeur web full-stack, j'ai contribué au développement de l'application, depuis son lancement public jusqu'à fin 2021, année durant laquelle nous avons réalisé plus de 200 missions pour nos clients.",
+      "ul1": "amélioration du module de recherche de professionnels : ciblage plus pertinent, volumes plus élevés, évaluation de la pertinence de nos résultats",
+      "ul2": "automatisation et optimisation du système d'envoi des emails",
+      "ul3": "enrichissement et qualification de la base de données",
+      "ul4": "montée en compétence sur le devops, et la CI/CD avec drone et rancher",
+      "ul5": "amélioration continue du code et de l'architecture de l'application",
+      "ul6": "encadrement et formation de stagiaires et développeur·euses juniors"
+    },
+    "website": "https://www.umi.us"
   },
   "umi2": {
     "date": "Août 2014 - Juin 2015",
     "company": "United Motion Ideas",
     "job": "Stage de fin d'études",
-    "desc": "Start-up lyonnaise qui évolue dans le domaine de la valorisation de l'innovation. Via sa plateforme web, elle permet aux entreprises innovantes d'avoir un retour mondial rapide des professionnels du marché.",
-    "mission": "Lors de mon stage, j'ai conçu et implémenté un module de notifications en temps réel pour la plateforme UMI.",
-    "type": "work",
-    "location": "Lyon",
-    "website": "https://www.umi.us",
-    "maps": "https://www.google.fr/maps/place/United+Motion+Ideas/@45.788595,4.8052027,17z/data=!4m5!3m4!1s0x0:0xd1b60a0ec73d41c7!8m2!3d45.7884161!4d4.806076"
+    "desc": "UMI est l’outil de test marché dédié au succès de vos projets d’innovation. Nous boostons les interactions avec les acteurs de votre marché, parmi le milliard de professionnels atteignables grâce à nos algorithmes.",
+    "mission": {
+      "desc": "Lors de ce stage, j'ai pris en charge la conception et le développement d'un module de recherche de professionnels ciblés",
+      "ul1": "conception d'un microservice et de son API Rest",
+      "ul2": "implémentation de tests unitaires",
+      "ul3": "réalisation de l'interface utilisateurs permettant de lancer les recherches et visualiser les résultats",
+      "ul4": "Conception et implémentation d'un système de notifications en temps réel pour notre application web",
+      "ul5": "mise en place d'un système publish/subscribe avec redis",
+      "ul6": "gestion des évènements en temps réel avec socket.io"
+    },
+  "website": "https://www.umi.us"
   },
   "mozilla": {
     "date": "Juin 2013",
     "company": "Mozilla Firefox",
     "job": "Projet de contribution au logiciel libre",
     "desc": "Mozilla Firefox est un navigateur web libre et gratuit, développé et distribué par la Mozilla Foundation, avec l'aide de nombreux contributeurs bénévoles.",
-    "mission": "Dans une équipe de 4 étudiants sous la supervision d'un employé de la Mozilla Foundation, nous avons corrigés plusieurs bugs et implémenté de nouvelles fonctionnalités liées à la partie media du navigateur.",
-    "type": "work",
-    "location": "Grenoble",
-    "website": "https://www.mozilla.org/fr/firefox/new/",
-    "maps": "https://www.google.fr/maps/place/Ensimag/@45.1934612,5.7660772,17z/data=!3m1!4b1!4m5!3m4!1s0x478af5a7a840ceb7:0x56b8d2dc6bcdecf5!8m2!3d45.1934574!4d5.7682659"
+    "mission":  {
+      "desc": "Dans une équipe de 4 étudiants sous la supervision d'un employé de la Mozilla Foundation, nous avons corrigés plusieurs bugs et implémenté de nouvelles fonctionnalités liées à la partie media du navigateur."
+    },
+    "website": "https://www.mozilla.org/fr/firefox/new/"
   },
   "stm": {
     "date": "Juillet 2012 - Août 2012",
     "company": "ST Microelectronics",
     "job": "Stage opérateur en salle blanche",
     "desc": "STMicroelectronics est une société internationale qui développe, fabrique et commercialise des puces électroniques. Elle est l'un des tout premiers acteurs mondiaux du secteur économique de la production de semi-conducteurs.",
-    "mission": "Travail dans la salle blanche Crolles 300, sur la chaîne de production de wafers 300mm. En poste sur la \"speedline\": suivi des lots urgents de la production.",
-    "type": "work",
-    "location": "Crolles",
-    "website": "http://www.st.com/content/st_com/en/about/careers/st-locations/emea/france/crolles.html",
-    "maps": "https://www.google.fr/maps/place/STMicroelectronics/@45.268018,5.8812696,17z/data=!4m5!3m4!1s0x478a599bc746f64f:0xcb05e1c6c99656a3!8m2!3d45.2680142!4d5.8834583"
+    "mission":  {
+      "desc": "Travail dans la salle blanche Crolles 300, sur la chaîne de production de wafers 300mm. En poste sur la \"speedline\": suivi des lots urgents de la production."
+    },
+    "website": "http://www.st.com/content/st_com/en/about/careers/st-locations/emea/france/crolles.html"
   },
   "upc": {
     "date": "2013 - 2014",
     "company": "FIB BarcelonaTech",
     "job": "Master in Informatics",
     "desc": "L'Université polytechnique de Catalogne (BarcelonaTech) est la plus grande université scientifique et technique de la Generalitat de Catalogne en Espagne. La Facultat d'Informàtica est le département dédié à l'informatique.",
-    "mission": "En échange universitaire (Erasmus) durant deux semestres, j'ai suivi le cursus du Master in Innovation and Research in Informatics : cours de réseau, de programmation (Javascript, Erlang) mais aussi de Machine Learning.",
-    "type": "school",
-    "location": "Barcelona",
-    "website": "http://www.fib.upc.edu/",
-    "maps": "https://www.google.fr/maps/place/UPC+Facultat+d'Inform%C3%A0tica+de+Barcelona/@41.3894881,2.1111972,17z/data=!3m1!4b1!4m5!3m4!1s0x12a498509f468895:0xf3ab8ba023c5cd56!8m2!3d41.3894841!4d2.1133859"
+    "mission":  {
+      "desc": "En échange universitaire (Erasmus) durant deux semestres, j'ai suivi le cursus du Master in Innovation and Research in Informatics : cours de réseau, de programmation (Javascript, Erlang) mais aussi de Machine Learning."
+    },
+    "website": "http://www.fib.upc.edu/"
   },
   "imag": {
     "date": "2012 - 2013",
     "company": "Grenoble INP Ensimag",
     "job": "Deuxième année d’école d’ingénieurs",
     "desc": "L’École Nationale Supérieure d’Informatique et de Mathématiques Appliquées est une grande école d’ingénieurs du groupe Grenoble INP, spécialisée en informatique, mathématiques et télécommunications.",
-    "mission": "J'ai pu appronfondir à l'ENSIMAG mes compétences en développement logiciel, sécurité des réseaux ou encore systèmes de gestion de base de données.",
-    "type": "school",
-    "location": "Grenoble",
-    "website": "http://ensimag.grenoble-inp.fr/",
-    "maps": "https://www.google.fr/maps/place/Ensimag/@45.1934612,5.7660772,17z/data=!3m1!4b1!4m5!3m4!1s0x478af5a7a840ceb7:0x56b8d2dc6bcdecf5!8m2!3d45.1934574!4d5.7682659"
+    "mission":  {
+      "desc": "J'ai pu appronfondir à l'ENSIMAG mes compétences en développement logiciel, sécurité des réseaux ou encore systèmes de gestion de base de données."
+    },
+    "website": "http://ensimag.grenoble-inp.fr/"
   },
   "phelma": {
     "date": "2011 - 2012",
     "company": "Grenoble INP Phelma",
     "job": "Première année d’école d’ingénieurs",
     "desc": "L’École nationale supérieure de PHysique ÉLectronique MAtériaux est une grande école d’ingénieurs du groupe Grenoble INP qui offre une grande diversité de cursus, des technologies de l'information à la nanotechnologie.",
-    "mission": "Engagé dans le tronc commun PET (Physique, Électronique, Télécoms), j'ai suivi des cours portant sur des thèmes variés tels que l'électronique, la programmation en C ou encore le traitement du signal.",
-    "type": "school",
-    "location": "Grenoble",
-    "website": "http://phelma.grenoble-inp.fr/",
-    "maps": "https://www.google.fr/maps/place/Grenoble+INP+-+Phelma/@45.1950301,5.7079163,17z/data=!3m1!4b1!4m5!3m4!1s0x478af3802e49a815:0x3d68cc9c1b2e9fb6!8m2!3d45.1950263!4d5.710105"
-  },
-  "prepa": {
-    "date": "2009 - 2011",
-    "company": "Lycée Claude Fauriel",
-    "job": "Classe préparatoire Maths - Physique",
-    "desc": "Le lycée Claude Fauriel est un lycée public de Saint-Etienne, qui comporte également des classes préparatoires aux grandes écoles (CPGE).",
-    "mission": "J'ai suivi le cursus Maths/Physique pendant deux ans (MPSI puis MP*), pour préparer les concours d'entrée aux grandes écoles d'ingénieur.",
-    "type": "school",
-    "location": "Saint-Etienne",
-    "website": "http://www2.ac-lyon.fr/etab/lycees/lyc-42/fauriel/spip.php?rubrique164&lang=fr",
-    "maps": "https://www.google.fr/maps/place/Lyc%C3%A9e+Claude+Fauriel/@45.4380835,4.3917392,17z/data=!3m1!4b1!4m5!3m4!1s0x47f5a954ccca3bf3:0xe95c5fe3ee0f0504!8m2!3d45.4380798!4d4.3939279"
+    "mission":  {
+      "desc": "Engagé dans le tronc commun PET (Physique, Électronique, Télécoms), j'ai suivi des cours portant sur des thèmes variés tels que l'électronique, la programmation en C ou encore le traitement du signal."
+    },
+    "website": "http://phelma.grenoble-inp.fr/"
   }
 }

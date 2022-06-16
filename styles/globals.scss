@@ -5,6 +5,7 @@ html, body {
   max-width: 1800px;
   padding: 0;
   margin: 0;
+  background-color: #FFFFFF;
 }
 
 .o-0 {
@@ -12,19 +13,26 @@ html, body {
   transition: all 0.2s ease;
 }
 
-html, button, body, .pure-g, .pure-g [class *= "pure-u"] {
+html, button, body, .pure-g, .pure-g [class *= "pure-u"], a, a:visited {
   font-family: -apple-system, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: normal;
+  color: #363636;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #202020;
 }
 
 main {
   width: auto;
   margin: auto;
-  padding: 0 50px;
+  padding: 0;
 }
 
 section {
   width: 100%;
+  padding: 50px;
 }
 
 h1 {
@@ -70,20 +78,41 @@ h2 {
   }
 }
 
+#experience {
+  background-color: #F5F5F5;
+}
+
 h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #363636;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #363636;
+}
+
+h5 {
   font-size: 1rem;
   font-weight: 600;
   color: #616161;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .small {
-  font-size: 1rem;
-}
+  font-size: 0.9rem;
+  line-height: 1.2rem;}
 
 .legend {
   font-size: 0.9rem;
   color: #404040;
   text-transform: uppercase;
   margin: 8px 0;
+}
+
+#home {
+  height: 100vh;
 }
