@@ -1,7 +1,38 @@
 .title {
     font-family: 'Plus Jakarta Display';
-    font-size: 3.5rem;
-    line-height: 5rem;
-    font-weight: 600;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 500;
     text-transform: uppercase;
+    margin: auto;
+    width: fit-content;
 }
+
+.smartphone {
+    z-index: 11;
+    position: absolute;
+    right: 470px;
+    top: 240px;
+}
+
+.bigScreen {
+    z-index: 12;
+    position: absolute;
+    right: 0;
+    top: -100px;
+}
+
+.laptop {
+    z-index: 13;
+    position: absolute;
+    right: 290px;
+    top: 170px;
+}
+
+.mouse {
+    z-index: 14;
+    position: absolute;
+    right: 280px;
+    top: 400px;
+}
+

@@ -1,5 +1,6 @@
 {
   "hi": "Salut !",
-  "name": "Je suis Bastien,",
-  "job": "Développeur web fullstack"
+  "iam": "Je suis",
+  "job1": "Développeur web",
+  "job2": "fullstack"
 }

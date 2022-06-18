@@ -1,5 +1,6 @@
 {
   "hi": "Hi!",
-  "name": "I'm Bastien,",
-  "job": "Fullstack web developer"
+  "iam": "I'm",
+  "job1": "Fullstack",
+  "job2": "web developer"
 }

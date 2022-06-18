@@ -28,6 +28,7 @@ main {
   width: auto;
   margin: auto;
   padding: 0;
+  overflow: hidden;
 }
 
 section {
@@ -78,7 +79,7 @@ h2 {
   }
 }
 
-#experience {
+#experience, #home {
   background-color: #F5F5F5;
 }
 
@@ -114,5 +115,14 @@ h5 {
 }
 
 #home {
-  height: 100vh;
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+
+#about, #skills {
+  background-color: white;
+}
+
+.green {
+  color: #4EC317
 }
