@@ -6,6 +6,7 @@ import Home from '../components/Home'
 import About from '../components/About'
 import Skills from '../components/Skills'
 import ExperienceSection from '../components/ExperienceSection'
+import Transition from '../components/Transition'
 
 
 export async function getStaticProps({ locale }: {locale: string}) {
@@ -21,8 +22,10 @@ const Index: NextPage = () => {
   return (
     <Layout title="Bastien Scanu">
         <Home/>
+        <Transition direction='top'/>
         <About/>
         <Skills/>
+        <Transition direction='down'/>
         <ExperienceSection/>
     </Layout>
   )
