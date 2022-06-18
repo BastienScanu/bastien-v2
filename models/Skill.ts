@@ -1,8 +1,8 @@
-import Techno from "./Techno";
+import Techno from './Techno'
 
 type Skill = {
-    name: string,
-    technos: Array<Techno>
+  name: string
+  technos: Array<Techno>
 }
 
-export default Skill;
+export default Skill

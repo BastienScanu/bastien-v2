@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next'
 import * as React from 'react'
 import experienceData from '../public/data/experienceData'
 import Experience from '../models/Experience'
@@ -9,15 +9,10 @@ const ExperienceSection = () => {
 
   return (
     <section id="experience">
-      <h1>
-        {t('title')}
-      </h1>
-      
+      <h1>{t('title')}</h1>
+
       {experienceData.map((xp: Experience) => {
-        return <ExperienceCard
-          key = {xp.name}
-          xp = {xp}
-        />
+        return <ExperienceCard key={xp.name} xp={xp} />
       })}
     </section>
   )

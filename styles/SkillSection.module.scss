@@ -1,48 +1,48 @@
 .skillSection {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 
-    .padding {
-        padding-top: 100px;
-    }
+  .padding {
+    padding-top: 100px;
+  }
 }
 
 .logo {
-    filter: grayscale(100%);
-    transition: all 0.3s ease;
-    opacity: 0.8
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  opacity: 0.8;
 }
 
 .logo:hover {
-    filter: none;
-    opacity: 1;
+  filter: none;
+  opacity: 1;
 }
 
 .logoFrame {
-    display: inline-block;
-    height: 64px;
+  display: inline-block;
+  height: 64px;
 }
 
 .logoFrame:hover {
-    position: relative;
-    top: -1px;
-    transition: all 0.2s ease;
+  position: relative;
+  top: -1px;
+  transition: all 0.2s ease;
 }
 
 .progressTitle {
-    font-size: 1rem;
-    margin: 8px 0;
+  font-size: 1rem;
+  margin: 8px 0;
 }
 
 .progressBar {
-    height: 12px;
-    max-width: 300px;
-    background: #E0E0E0;
-    border-radius: 6px;
+  height: 12px;
+  max-width: 300px;
+  background: #e0e0e0;
+  border-radius: 6px;
 
-    .progressFill {
-        height: 12px;
-        background: linear-gradient(180deg, #4EC417 0%, #35A500 100%);
-        border-radius: 6px;
-        transition: all 0.4s ease;
-    }
+  .progressFill {
+    height: 12px;
+    background: linear-gradient(180deg, #4ec417 0%, #35a500 100%);
+    border-radius: 6px;
+    transition: all 0.4s ease;
+  }
 }

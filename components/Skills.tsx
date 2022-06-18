@@ -1,6 +1,6 @@
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next'
 import * as React from 'react'
-import SkillSection from './SkillSection';
+import SkillSection from './SkillSection'
 import skillsData from '../public/data/skillsData'
 
 const Skills = () => {
@@ -8,16 +8,9 @@ const Skills = () => {
 
   return (
     <section id="skills">
-      <h1>
-        {t('title')}
-      </h1>
-      {skillsData.map(skill => {
-        return (
-          <SkillSection
-            key={skill.name}
-            skill={skill}
-          />
-        );
+      <h1>{t('title')}</h1>
+      {skillsData.map((skill) => {
+        return <SkillSection key={skill.name} skill={skill} />
       })}
     </section>
   )

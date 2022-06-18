@@ -1,19 +1,19 @@
 .svg {
-    contain: strict;
-    stroke-width: 0px;
-    background-color: transparent;
+  contain: strict;
+  stroke-width: 0px;
+  background-color: transparent;
 }
 
 .blob {
-    fill: url(#gradient-fill);
+  fill: url(#gradient-fill);
 }
 
 .frame {
-    height: 33vw;
+  height: 33vw;
 }
 
 .illustration {
-    position: relative;
-    top: -33vw;
-    z-index: 2;
+  position: relative;
+  top: -33vw;
+  z-index: 2;
 }

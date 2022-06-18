@@ -1,7 +1,7 @@
 type Techno = {
-    key: string,
-    name: string,
-    value: number
+  key: string
+  name: string
+  value: number
 }
 
-export default Techno;
+export default Techno

@@ -1,11 +1,12 @@
-@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
-@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/fira-sans.min.css");
+@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/fira-sans.min.css');
 
-html, body {
+html,
+body {
   max-width: 1800px;
   padding: 0;
   margin: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .o-0 {
@@ -13,7 +14,13 @@ html, body {
   transition: all 0.2s ease;
 }
 
-html, button, body, .pure-g, .pure-g [class *= "pure-u"], a, a:visited {
+html,
+button,
+body,
+.pure-g,
+.pure-g [class*='pure-u'],
+a,
+a:visited {
   font-family: -apple-system, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: normal;
   color: #363636;
@@ -60,8 +67,9 @@ h2 {
 }
 
 .separationLine {
-  border-bottom: .2rem solid #9E9E9E;
-  flex-grow: 1;  position: relative;
+  border-bottom: 0.2rem solid #9e9e9e;
+  flex-grow: 1;
+  position: relative;
   top: -0.3rem;
 
   &.small {
@@ -70,7 +78,8 @@ h2 {
   }
 }
 
-#front, #database {
+#front,
+#database {
   display: flex;
   flex-direction: row-reverse;
 
@@ -79,8 +88,9 @@ h2 {
   }
 }
 
-#experience, #home {
-  background-color: #F5F5F5;
+#experience,
+#home {
+  background-color: #f5f5f5;
 }
 
 h3 {
@@ -105,7 +115,8 @@ h5 {
 
 .small {
   font-size: 0.9rem;
-  line-height: 1.2rem;}
+  line-height: 1.2rem;
+}
 
 .legend {
   font-size: 0.9rem;
@@ -119,10 +130,11 @@ h5 {
   padding-bottom: 200px;
 }
 
-#about, #skills {
+#about,
+#skills {
   background-color: white;
 }
 
 .green {
-  color: #4EC317
+  color: #4ec317;
 }

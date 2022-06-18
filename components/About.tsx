@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next'
 import * as React from 'react'
 
 const About = () => {
@@ -6,12 +6,8 @@ const About = () => {
 
   return (
     <section id="about">
-      <p>
-        {t('pitch')}
-      </p>
-      <p>
-        {t('looking')}
-      </p>
+      <p>{t('pitch')}</p>
+      <p>{t('looking')}</p>
     </section>
   )
 }
