@@ -1,0 +1,23 @@
+name: Deploy on dev
+
+on:
+  push:
+    branches: [dev]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: 'BastienScanu/bastien-v2'
+          ref: 'dev'
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install NPM dependencies
+        run: npm install
+      - name: Build NextJS app
+        run: npm run build
+      - name: Start NextJS app
+        run: npm run start
