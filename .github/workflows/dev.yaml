@@ -1,5 +1,8 @@
 name: Deploy on dev
 
+env:
+  GITHUB_WORKSPACE: /wwwdev
+
 on:
   push:
     branches: [dev]
