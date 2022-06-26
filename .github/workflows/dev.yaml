@@ -27,4 +27,4 @@ jobs:
       - name: Build NextJS app
         run: npm run build
       - name: Start NextJS app
-        run: PORT=3003 pm2 start npm --name "app" -- start
+        run: pm2 start npm --name "app" -- start
