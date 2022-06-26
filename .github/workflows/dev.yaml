@@ -27,4 +27,4 @@ jobs:
       - name: Build NextJS app
         run: npm run build
       - name: Start NextJS app
-        run: pm2 start npm --name "app" -- start
+        run: pm2 start npm --name "app" -- start -- -p 3003
