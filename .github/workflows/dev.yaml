@@ -26,7 +26,5 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
       - name: Build NextJS app
         run: npm run build
-      - name: Install PM2
-        run: npm i pm2
       - name: Start NextJS app
-        run: pm2 start npm run start
+        run: pm2 start npm --name "app" -- start -p 3000
