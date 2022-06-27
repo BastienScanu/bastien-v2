@@ -1,16 +1,14 @@
-name: Deploy on dev
+name: Deploy on prod
 
 on:
   push:
-    branches: [dev]
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
-        with:
-          ref: 'dev'
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -27,4 +25,4 @@ jobs:
       - name: Build NextJS app
         run: npm run build
       - name: Start NextJS app
-        run: pm2 reload dev
+        run: pm2 reload prod
