@@ -55,6 +55,11 @@
       align-items: center;
       margin: 15px 0;
 
+      .jobTitle {
+        display: flex;
+        flex-direction: row;
+      }
+
       h3 {
         margin: 0 10px;
 
@@ -107,6 +112,33 @@
         margin: 5px 10px;
         background: #eaeaea;
         border-radius: 3px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 70em) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .card {
+    width: 100%;
+    .title {
+      .job {
+        .jobTitle {
+          flex-direction: column;
+
+          h3::after {
+            content: '';
+          }
+
+          h4 {
+            margin: 0 10px;
+          }
+        }
       }
     }
   }

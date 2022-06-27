@@ -41,6 +41,10 @@ main {
 section {
   width: 100%;
   padding: 50px;
+
+  @media screen and (max-width: 60em) {
+    padding: 20px;
+  }
 }
 
 h1 {
@@ -78,13 +82,16 @@ h2 {
   }
 }
 
-#front,
-#database {
-  display: flex;
-  flex-direction: row-reverse;
-
-  .sectionTitle {
+@media screen and (min-width: 48em) {
+  #design,
+  #back,
+  #devops {
+    display: flex;
     flex-direction: row-reverse;
+
+    .sectionTitle {
+      flex-direction: row-reverse;
+    }
   }
 }
 

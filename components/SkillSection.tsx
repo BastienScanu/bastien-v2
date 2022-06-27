@@ -34,14 +34,17 @@ const SkillSection = ({ skill }: { skill: Skill }) => {
 
   return (
     <div id={skill.name} className={styles.skillSection}>
-      <div className={'pure-u-2-3 ' + styles.padding}>
+      <div className="pure-u-1-1 pure-u-md-1-3">
+        <Illustration name={skill.name} />
+      </div>
+      <div className={'pure-u-1-1 pure-u-md-2-3 ' + styles.padding}>
         <div className="sectionTitle">
           <div className="separationLine small"></div>
           <h2>{t('title')}</h2>
           <div className="separationLine"></div>
         </div>
         <p>{t('desc')}</p>
-        <div className="pure-u-1-2">
+        <div className="pure-u-1-1 pure-u-md-1-2">
           {skill.technos.map((techno: Techno) => {
             return (
               <div key={techno.name} className={styles.logoFrame}>
@@ -58,7 +61,7 @@ const SkillSection = ({ skill }: { skill: Skill }) => {
             )
           })}
         </div>
-        <div className={'pure-u-1-2 o-' + displayedTechno.value}>
+        <div className={'pure-u-1-1 pure-u-md-1-2 o-' + displayedTechno.value}>
           <p className={styles.progressTitle}>{displayedTechno.name}</p>
           <div className={styles.progressBar}>
             <div
@@ -68,9 +71,6 @@ const SkillSection = ({ skill }: { skill: Skill }) => {
           </div>
           <p className="legend">{level(displayedTechno.value)}</p>
         </div>
-      </div>
-      <div className="pure-u-1-3">
-        <Illustration name={skill.name} />
       </div>
     </div>
   )

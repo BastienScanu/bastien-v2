@@ -8,7 +8,7 @@ const Home = () => {
   const { t } = useTranslation('home')
   return (
     <section id="home" className="pure-g">
-      <div className="pure-u-1-2">
+      <div className="pure-u-1-1 pure-u-md-1-2">
         <ParallaxElement speed={-15}>
           <p className={styles.title}>
             {t('hi')}
@@ -21,7 +21,7 @@ const Home = () => {
           </p>
         </ParallaxElement>
       </div>
-      <div className="pure-u-1-2">
+      <div className="pure-u-1-1 pure-u-md-1-2">
         <ParallaxElement className={styles.smartphone} speed={-5}>
           <Image
             src={`/images/layout/smartphone.svg`}

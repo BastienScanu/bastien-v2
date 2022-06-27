@@ -29,8 +29,10 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
           <div className={styles.titleRight}>
             <div className={styles.job}>
               <div className={styles.dot}></div>
-              <h3>{xp.company}</h3>
-              <h4>{t(`${xp.name}.job`)}</h4>
+              <div className={styles.jobTitle}>
+                <h3>{xp.company}</h3>
+                <h4>{t(`${xp.name}.job`)}</h4>
+              </div>
             </div>
             <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} />
           </div>

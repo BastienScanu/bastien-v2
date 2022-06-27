@@ -9,7 +9,15 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <link
             rel="stylesheet"
-            href="https://unpkg.com/purecss@2.1.0/build/pure-min.css"
+            href="https://unpkg.com/purecss@2.1.0/build/base-min.css"
+          />
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/purecss@2.1.0/build/grids-min.css"
+          />
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"
           />
         </Head>
         <body>

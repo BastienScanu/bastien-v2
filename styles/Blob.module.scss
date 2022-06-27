@@ -17,3 +17,13 @@
   top: -33vw;
   z-index: 2;
 }
+
+@media screen and (max-width: 48em) {
+  .frame {
+    height: 80vw;
+  }
+
+  .illustration {
+    top: -80vw;
+  }
+}
