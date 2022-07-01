@@ -21,7 +21,7 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
       id={xp.name}
       className={styles.card + (isExpanded ? ' ' + styles.expanded : '')}
     >
-      <div className={styles.title} {...getToggleProps()}>
+      <button className={styles.title} {...getToggleProps()}>
         <div className={styles.date + ' pure-u-1-5'}>
           <h5>{t(`${xp.name}.date`)}</h5>
         </div>
@@ -37,7 +37,7 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
             <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} />
           </div>
         </div>
-      </div>
+      </button>
       <section {...getCollapseProps()}>
         <div className="pure-g">
           <div className={styles.logo + ' pure-u-1-5'}>

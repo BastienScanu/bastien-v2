@@ -5,6 +5,11 @@
   justify-content: center;
   margin: auto;
 
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+
   section {
     background: #ffffff;
     padding: 0;
