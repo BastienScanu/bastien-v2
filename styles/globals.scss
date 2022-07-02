@@ -82,6 +82,12 @@ h2 {
   }
 }
 
+@media screen and (max-width: 45em) {
+  #home {
+    padding-top: 100px;
+  }
+}
+
 @media screen and (min-width: 48em) {
   #design,
   #back,
