@@ -1,0 +1,114 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 20;
+  box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.1);
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .logo {
+      position: absolute;
+      left: 50px;
+    }
+
+    .rightMenu {
+      position: absolute;
+      right: 50px;
+
+      .hamburger {
+        display: none;
+      }
+    }
+
+    nav {
+      align-self: center;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+
+        li {
+          padding: 5px 15px;
+          font-size: 1.1rem;
+
+          a {
+            position: relative;
+          }
+
+          a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            border-radius: 4px;
+            background-color: #363636;
+            bottom: -5px;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+          }
+
+          a:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 45em) {
+  .transparent {
+    background: none;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 45em) {
+  .header {
+    height: 75px;
+    .content {
+      nav {
+        position: fixed;
+        right: -100%;
+        top: 75px;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        ul {
+          flex-direction: column;
+        }
+      }
+
+      nav.active {
+        right: 0;
+      }
+
+      .logo {
+        top: 0;
+      }
+
+      .rightMenu {
+        top: 0;
+        .hamburger {
+          display: inline;
+          cursor: pointer;
+          font-size: 1.5rem;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
