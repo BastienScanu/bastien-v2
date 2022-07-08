@@ -52,22 +52,22 @@ const Header = () => {
         <nav className={isMenuActive ? styles.active : ''}>
           <ul>
             <li onClick={handleMenu}>
-              <Link href="#home">
+              <Link href="/#home">
                 <a>{t('home')}</a>
               </Link>
             </li>
             <li onClick={handleMenu}>
-              <Link href="#about">
+              <Link href="/#about">
                 <a>{t('about')}</a>
               </Link>
             </li>
             <li onClick={handleMenu}>
-              <Link href="#skills">
+              <Link href="/#skills">
                 <a>{t('skills')}</a>
               </Link>
             </li>
             <li onClick={handleMenu}>
-              <Link href="#experience">
+              <Link href="/#experience">
                 <a>{t('experience')}</a>
               </Link>
             </li>
