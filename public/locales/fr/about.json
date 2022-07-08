@@ -1,5 +1,9 @@
 {
   "hello": "Bonjour !",
-  "pitch": "Je conçois et développe des applications web modernes et performantes.\nEn tant que développeur full-stack, je maîtrise aussi bien le développement front-end que back-end, ou les systèmes de gestion de bases de données. J'ai également quelques compétences en graphisme et devops.\nJe suis aujourd’hui développeur web chez Energies Demain, où je développe des outils web qui aident les collectivités à mener leur transition énergétique.",
-  "cv": "Mon CV"
+  "pitch1": "Je conçois et développe des applications web modernes, performantes et accessibles.",
+  "pitch2": "En tant que développeur full-stack, je maîtrise aussi bien le développement front-end que back-end, ou les systèmes de gestion de bases de données. J'ai également quelques compétences en graphisme et devops.",
+  "pitch3": "Je suis aujourd’hui développeur web chez Energies Demain, où je développe des outils web qui aident les collectivités à mener leur transition énergétique.",
+  "cv": "Mon CV",
+  "cvLink": "/BastienScanu-cv.pdf",
+  "website": "En savoir plus sur ce site"
 }

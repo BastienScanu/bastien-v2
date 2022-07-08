@@ -47,6 +47,10 @@ section {
   }
 }
 
+#about {
+  padding: 20px;
+}
+
 h1 {
   font-family: 'Plus Jakarta Display';
   color: black;
@@ -150,4 +154,56 @@ h5 {
 
 .green {
   color: #4ec317;
+}
+
+button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid green;
+  margin: 20px;
+  color: green;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    .hoverContent {
+      left: 0;
+    }
+
+    .buttonText {
+      left: 150px;
+    }
+  }
+
+  .buttonText {
+    position: relative;
+    left: 0;
+    transition: all 0.35s ease-Out;
+  }
+
+  .hoverContent {
+    width: 150px;
+    height: 40px;
+    background: green;
+    color: white;
+    left: -200px;
+    position: absolute;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease-Out;
+    bottom: 0;
+  }
 }
