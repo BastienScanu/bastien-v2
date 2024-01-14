@@ -6,32 +6,42 @@
   text-transform: uppercase;
   margin: auto;
   width: fit-content;
+  height: 100vh;
+
+  @media screen and (max-width: 45em) {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  @media screen and (min-width: 60em) {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
 }
 
 .smartphone {
   z-index: 11;
-  position: absolute;
-  right: 470px;
-  top: 240px;
+  position: relative;
+  right: 50px;
+  top: 220px;
 }
 
 .bigScreen {
   z-index: 12;
-  position: absolute;
+  position: relative;
   right: 0;
-  top: -100px;
+  top: -300px;
 }
 
 .laptop {
   z-index: 13;
-  position: absolute;
-  right: 290px;
-  top: 170px;
+  position: relative;
+  top: -600px;
 }
 
 .mouse {
   z-index: 14;
-  position: absolute;
-  right: 280px;
-  top: 400px;
+  position: relative;
+  left: 250px;
+  top: -720px;
 }

@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 .o-0 {
@@ -45,10 +46,6 @@ section {
   @media screen and (max-width: 60em) {
     padding: 20px;
   }
-}
-
-#about {
-  padding: 20px;
 }
 
 h1 {
@@ -205,5 +202,6 @@ button {
     justify-content: center;
     transition: all 0.25s ease-Out;
     bottom: 0;
+    font-size: 1.1rem;
   }
 }
