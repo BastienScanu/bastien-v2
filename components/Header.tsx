@@ -39,46 +39,46 @@ const Header = () => {
       <div className={styles.content}>
         <div className={styles.logo}>
           <Link href="/">
-            <a>
-              <Image
-                src={`/images/layout/logo-texte.svg`}
-                height="70px"
-                width="120px"
-                alt={'Logo Bastien Scanu'}
-                style={{
-                  maxWidth: "100%",
-                  height: "auto"
-                }} />
-            </a>
+
+            <Image
+              src={`/images/layout/logo-texte.svg`}
+              height="70px"
+              width="120px"
+              alt={'Logo Bastien Scanu'}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
+
           </Link>
         </div>
         <nav className={isMenuActive ? styles.active : ''}>
           <ul>
             <li onClick={handleMenu}>
               <Link href="/#home">
-                <a>{t('home')}</a>
+                {t('home')}
               </Link>
             </li>
             <li onClick={handleMenu}>
               <Link href="/#about">
-                <a>{t('about')}</a>
+                {t('about')}
               </Link>
             </li>
             <li onClick={handleMenu}>
               <Link href="/#skills">
-                <a>{t('skills')}</a>
+                {t('skills')}
               </Link>
             </li>
             <li onClick={handleMenu}>
               <Link href="/#experience">
-                <a>{t('experience')}</a>
+                {t('experience')}
               </Link>
             </li>
           </ul>
         </nav>
         <div className={styles.rightMenu}>
-          <Link href="" locale={lang}>
-            <a className={styles.lang}>{lang.toUpperCase()}</a>
+          <Link href="" locale={lang} className={styles.lang}>
+            {lang.toUpperCase()}
           </Link>
           <FontAwesomeIcon
             icon={faBars}

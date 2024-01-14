@@ -25,16 +25,16 @@ const About = () => {
             alt={'vectorized portrait of Bastien Scanu'} />
           <button>
             <Link href={t('cvLink')}>
-              <a>
-                <div className="hoverContent">
-                  <FontAwesomeIcon icon={faDownload} />
-                </div>
-              </a>
+
+              <div className="hoverContent">
+                <FontAwesomeIcon icon={faDownload} />
+              </div>
+
             </Link>
             <Link href={t('cvLink')}>
-              <a>
-                <span className="buttonText">{t('cv')}</span>
-              </a>
+
+              <span className="buttonText">{t('cv')}</span>
+
             </Link>
           </button>
         </div>
@@ -50,10 +50,10 @@ const About = () => {
           </p>
           <p className={styles.siteLink}>
             <Link href="/site">
-              <a>
-                {t('website')}
-                <FontAwesomeIcon icon={faArrowRightLong} />
-              </a>
+
+              {t('website')}
+              <FontAwesomeIcon icon={faArrowRightLong} />
+
             </Link>
           </p>
         </div>
