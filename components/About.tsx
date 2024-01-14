@@ -33,7 +33,11 @@ const About = () => {
                 </div>
               </a>
             </Link>
-            <span className="buttonText">{t('cv')}</span>
+            <Link href={t('cvLink')}>
+              <a>
+                <span className="buttonText">{t('cv')}</span>
+              </a>
+            </Link>
           </button>
         </div>
         <div className={styles.triangle}></div>
