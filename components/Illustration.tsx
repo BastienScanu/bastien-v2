@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import styles from '../styles/Blob.module.scss'
 import { RandomBlob } from '../models/RandomBlob'
 import { useState } from 'react'

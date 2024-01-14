@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import * as React from 'react'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Skill from '../models/Skill'
 import styles from '../styles/SkillSection.module.scss'
 import Illustration from './Illustration'

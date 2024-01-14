@@ -10,7 +10,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../styles/ExperienceCard.module.scss'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 const ExperienceCard = ({ xp }: { xp: Experience }) => {
   const { t } = useTranslation('experience')
@@ -84,7 +84,7 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
 export default ExperienceCard

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { useTranslation } from 'next-i18next'
 import styles from '../styles/Header.module.scss'
 import { useEffect, useState } from 'react'
