@@ -14,7 +14,7 @@
     "company": "Energies Demain",
     "job": "Développeur web full-stack",
     "desc": "As an ideas accelerator, consultant and field player, Énergies Demain works to promote the social and ecological transition. We place the human being at the heart of our business project.",
-    "mission":  {
+    "mission": {
       "desc": "I work in the web development team to design and develop web tools to best meet the needs of our customers:",
       "ul1": "Implementation of new features and redesign of our ERP interface",
       "ul2": "Refactoring and modernization of the front-end of our cartography and dataviz tool"
@@ -26,14 +26,15 @@
     "company": "United Motion Ideas",
     "job": "Design & Development Engineer",
     "desc": "UMI is the market test tool dedicated to helping your innovation projects succeed. We boost interactions with the players in your market, amongst the billion professionals who we can reach thanks to our algorithms.",
-    "mission":  {
+    "mission": {
       "desc": "As a full-stack web developer, I contributed to the development of our web application, from its public launch until the end of 2021, a year during which we completed more than 200 missions for our clients.",
       "ul1": "improvement of the professional search module: more relevant targeting, higher volumes, evaluation of the relevance of our results",
       "ul2": "automation and optimization of the email sending system",
-      "ul3": "enrichment and qualification of the database<br/> • increased competence in devops, and CI/CD with drone and rancher",
-      "ul4": "continuous improvement of the code and the architecture of the application",
-      "ul5": "coaching and training of interns and junior developers"
-},
+      "ul3": "enrichment and qualification of the database",
+      "ul4": "increased competence in devops, and CI/CD with drone and rancher",
+      "ul5": "continuous improvement of the code and the architecture of the application",
+      "ul6": "coaching and training of interns and junior developers"
+    },
     "website": "https://www.umi.us"
   },
   "umi2": {
@@ -41,7 +42,7 @@
     "company": "United Motion Ideas",
     "job": "Final year internship",
     "desc": "UMI is the market test tool dedicated to helping your innovation projects succeed. We boost interactions with the players in your market, amongst the billion professionals who we can reach thanks to our algorithms.",
-    "mission":  {
+    "mission": {
       "desc": "I was in charge of the design and development of a search module of targeted professionals.",
       "ul1": "design of microservice and its Rest API",
       "ul2": "write unit tests",
@@ -56,7 +57,7 @@
     "company": "Mozilla Firefox",
     "job": "Contribution project to the free software",
     "desc": "Mozilla Firefox is a free and open-source web browser developed by the Mozilla Foundation, with the help of thousands of volunteers.",
-    "mission":  {
+    "mission": {
       "desc": "Within a team of 4 students and under the supervision of a Mozilla Foundation developer, we corrected several bugs and implemented new functionalities related to the media code of the browser."
     },
     "website": "https://www.mozilla.org/fr/firefox/new/"
@@ -66,7 +67,7 @@
     "company": "ST Microelectronics",
     "job": "Cleanroom operator internship",
     "desc": "STMicroelectronics is a multinational company developing, manufacturing and commercializing semiconductor chips. It is one of the world leaders in semiconductors manufacturing.",
-    "mission":  {
+    "mission": {
       "desc": "Working in the cleanroom Crolles 300, on the production chain of 300mm wafers. My job was on the speedline, doing the follow-up of the urgent batches of the production."
     },
     "website": "http://www.st.com/content/st_com/en/about/careers/st-locations/emea/france/crolles.html"
@@ -76,7 +77,7 @@
     "company": "FIB BarcelonaTech",
     "job": "Master in Informatics",
     "desc": "The Polytechnic University of Catalonia (BarcelonaTech) is the largest scientific and technical university in Catalonia, Spain. The Informatics Faculty is the department dedicated to computer science.",
-    "mission":  {
+    "mission": {
       "desc": "I was in an exchange program during two semesters, following the Master in Innovation and Research in Informatics: computer networks, programming (Javascript, Erlang), but also Machine Learning."
     },
     "website": "http://www.fib.upc.edu/"
@@ -86,7 +87,7 @@
     "company": "Grenoble INP Ensimag",
     "job": "Second year of Engineering school",
     "desc": "The École nationale supérieure d'informatique et mathématiques appliquées, or Grenoble INP - Ensimag, is a prestigious French Grande École part of the Institut polytechnique de Grenoble. The school is one of the top French educational institutions and specializes in Computer science, Applied Mathematics and Telecommunications.",
-    "mission":  {
+    "mission": {
       "desc": "I could improve at the ENSIMAG my skills in software programming, network security and database management systems."
     },
     "website": "http://ensimag.grenoble-inp.fr/"
@@ -96,7 +97,7 @@
     "company": "Grenoble INP Phelma",
     "job": "First year of Engineering school",
     "desc": "The École Nationale Supérieure de Physique, Électronique et Matériaux (Phelma) is a prestigious French Grande École part of the Institut polytechnique de Grenoble. The school specializes in physics, electronics and materials.",
-    "mission":  {
+    "mission": {
       "desc": "My core curriculum was PET (Physics, Electronics, Telecoms), I followed classes about electronics, C programming and signal treatment."
     },
     "website": "http://phelma.grenoble-inp.fr/"
