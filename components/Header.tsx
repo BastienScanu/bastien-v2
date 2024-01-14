@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Link from 'next/link'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { useTranslation } from 'next-i18next'
 import styles from '../styles/Header.module.scss'
 import { useEffect, useState } from 'react'
@@ -45,7 +45,10 @@ const Header = () => {
                 height="70px"
                 width="120px"
                 alt={'Logo Bastien Scanu'}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </a>
           </Link>
         </div>
@@ -85,7 +88,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
 export default Header

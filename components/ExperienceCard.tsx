@@ -10,7 +10,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../styles/ExperienceCard.module.scss'
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 const ExperienceCard = ({ xp }: { xp: Experience }) => {
   const { t } = useTranslation('experience')
@@ -46,7 +46,10 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
               height={50}
               width={100}
               alt={xp.name.replace(/\d/, '') + ' logo'}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <p className="small">
               <a href={xp.maps} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faLocationDot} />

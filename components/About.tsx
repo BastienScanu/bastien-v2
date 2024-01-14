@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import * as React from 'react'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faTwitter,
@@ -22,9 +22,7 @@ const About = () => {
             src={`/images/layout/bastien.svg`}
             height="150px"
             width="150px"
-            layout="fixed"
-            alt={'vectorized portrait of Bastien Scanu'}
-          />
+            alt={'vectorized portrait of Bastien Scanu'} />
           <button>
             <Link href={t('cvLink')}>
               <a>
@@ -84,7 +82,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default About

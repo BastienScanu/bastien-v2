@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import * as React from 'react'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Skill from '../models/Skill'
 import styles from '../styles/SkillSection.module.scss'
 import Illustration from './Illustration'
@@ -56,9 +56,12 @@ const SkillSection = ({ skill }: { skill: Skill }) => {
                   alt={techno.key + ' logo'}
                   onMouseEnter={handleHover}
                   onMouseLeave={handleHoverOut}
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </div>
-            )
+            );
           })}
         </div>
         <div className={'pure-u-1-1 pure-u-md-1-2 o-' + displayedTechno.value}>
@@ -73,7 +76,7 @@ const SkillSection = ({ skill }: { skill: Skill }) => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default SkillSection
