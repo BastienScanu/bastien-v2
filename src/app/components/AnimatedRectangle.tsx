@@ -16,7 +16,6 @@ const AnimatedRectangle = ({
   color: string
 }) => {
   const coeff = 0.7
-  const height = 42 * coeff
   width = width * coeff
   return (
     <React.Fragment>

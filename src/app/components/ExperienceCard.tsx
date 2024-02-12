@@ -1,7 +1,8 @@
-import { useTranslation } from 'next-i18next'
+'use client'
+
 import * as React from 'react'
 import Experience from '../models/Experience'
-import useCollapse from 'react-collapsed'
+import { useCollapse } from 'react-collapsed'
 import {
   faChevronUp,
   faChevronDown,
@@ -10,7 +11,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../styles/ExperienceCard.module.scss'
-import Image from "next/image"
+import Image from 'next/image'
+import { useTranslation } from 'react-i18next'
 
 const ExperienceCard = ({ xp }: { xp: Experience }) => {
   const { t } = useTranslation('experience')
@@ -47,9 +49,10 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
               width={100}
               alt={xp.name.replace(/\d/, '') + ' logo'}
               style={{
-                maxWidth: "100%",
-                height: "auto"
-              }} />
+                maxWidth: '100%',
+                height: 'auto',
+              }}
+            />
             <p className="small">
               <a href={xp.maps} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faLocationDot} />
@@ -87,7 +90,7 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
         </div>
       </section>
     </div>
-  );
+  )
 }
 
 export default ExperienceCard

@@ -1,11 +1,11 @@
-import { useTranslation } from 'next-i18next'
 import * as React from 'react'
-import experienceData from '../public/data/experienceData'
+import experienceData from '../../../public/data/experienceData'
 import Experience from '../models/Experience'
 import ExperienceCard from './ExperienceCard'
+import initTranslations from '../../i18n'
 
-const ExperienceSection = () => {
-  const { t } = useTranslation('experience')
+const ExperienceSection = async ({ locale }: { locale: string }) => {
+  const { t } = await initTranslations(locale, ['experience'])
 
   return (
     <section id="experience">

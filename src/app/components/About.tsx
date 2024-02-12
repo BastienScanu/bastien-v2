@@ -1,6 +1,5 @@
-import { useTranslation } from 'next-i18next'
 import * as React from 'react'
-import Image from "next/image"
+import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faTwitter,
@@ -10,9 +9,10 @@ import {
 import styles from '../styles/About.module.scss'
 import Link from 'next/link'
 import { faArrowRightLong, faDownload } from '@fortawesome/free-solid-svg-icons'
+import initTranslations from '../../i18n'
 
-const About = () => {
-  const { t } = useTranslation('about')
+const About = async ({ locale }: { locale: string }) => {
+  const { t } = await initTranslations(locale, ['about'])
 
   return (
     <section id="about">
@@ -20,21 +20,18 @@ const About = () => {
         <div className={styles.portrait}>
           <Image
             src={`/images/layout/bastien.svg`}
-            height="150px"
-            width="150px"
-            alt={'vectorized portrait of Bastien Scanu'} />
+            height="150"
+            width="150"
+            alt={'vectorized portrait of Bastien Scanu'}
+          />
           <button>
             <Link href={t('cvLink')}>
-
               <div className="hoverContent">
                 <FontAwesomeIcon icon={faDownload} />
               </div>
-
             </Link>
             <Link href={t('cvLink')}>
-
               <span className="buttonText">{t('cv')}</span>
-
             </Link>
           </button>
         </div>
@@ -50,10 +47,8 @@ const About = () => {
           </p>
           <p className={styles.siteLink}>
             <Link href="/site">
-
               {t('website')}
               <FontAwesomeIcon icon={faArrowRightLong} />
-
             </Link>
           </p>
         </div>
@@ -82,7 +77,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 export default About

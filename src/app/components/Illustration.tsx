@@ -1,5 +1,7 @@
+'use client'
+
 import * as React from 'react'
-import Image from "next/image"
+import Image from 'next/image'
 import styles from '../styles/Blob.module.scss'
 import { RandomBlob } from '../models/RandomBlob'
 import { useState } from 'react'
@@ -47,17 +49,13 @@ const Illustration = ({ name }: { name: string }) => {
       <div className={styles.illustration}>
         <Image
           src={`/images/layout/${name}.svg`}
-          height="30vw"
-          width="30vw"
+          fill={true}
           alt={name + ' isometric illustration'}
           sizes="100vw"
-          style={{
-            width: "100%",
-            height: "auto"
-          }} />
+        />
       </div>
     </div>
-  );
+  )
 }
 
 export default Illustration

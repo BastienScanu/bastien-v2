@@ -1,10 +1,10 @@
-import { useTranslation } from 'next-i18next'
 import * as React from 'react'
 import SkillSection from './SkillSection'
-import skillsData from '../public/data/skillsData'
+import skillsData from '../../../public/data/skillsData'
+import initTranslations from '../../i18n'
 
-const Skills = () => {
-  const { t } = useTranslation('skills')
+const Skills = async ({ locale }: { locale: string }) => {
+  const { t } = await initTranslations(locale, ['skills'])
 
   return (
     <section id="skills">

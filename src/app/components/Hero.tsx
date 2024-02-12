@@ -1,12 +1,12 @@
-import { useTranslation } from 'next-i18next'
 import * as React from 'react'
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/Hero.module.scss'
 import AnimatedLogo from './AnimatedLogo'
+import initTranslations from '../../i18n'
 
-const Home = () => {
-  const { t } = useTranslation('home')
+const Hero = async ({ locale }: { locale: string }) => {
+  const { t } = await initTranslations(locale, ['hero'])
   return (
-    <section id="home" className="pure-g">
+    <section id="hero">
       <div className="pure-u-1-1 pure-u-md-1-2">
         <AnimatedLogo />
       </div>
@@ -25,4 +25,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Hero

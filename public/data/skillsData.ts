@@ -1,4 +1,4 @@
-import Skill from '../../models/Skill'
+import Skill from '../../src/app/models/Skill'
 
 const skillsData: Skill[] = [
   {
