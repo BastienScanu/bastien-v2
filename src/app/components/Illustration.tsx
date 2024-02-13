@@ -28,23 +28,6 @@ const Illustration = ({ name }: { name: string }) => {
         className={styles.svg}
       >
         <path className={styles.blob} d={path}></path>
-        <defs>
-          <linearGradient
-            id="gradient-fill"
-            x1="0"
-            y1="0"
-            x2={size}
-            y2={size}
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.14285714285714285" stopColor="#14851c" />
-            <stop offset="0.2857142857142857" stopColor="#1b931e" />
-            <stop offset="0.42857142857142855" stopColor="#1e9a1e" />
-            <stop offset="0.5714285714285714" stopColor="#22a11f" />
-            <stop offset="0.7142857142857142" stopColor="#26a81f" />
-            <stop offset="0.8571428571428571" stopColor="#2eb620" />
-          </linearGradient>
-        </defs>
       </svg>
       <div className={styles.illustration}>
         <Image

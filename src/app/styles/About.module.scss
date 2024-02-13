@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .content {
   max-width: 55rem;
   margin: auto;
@@ -8,7 +10,10 @@
   .siteLink {
     font-size: 0.9rem;
     text-align: right;
+
     a {
+      color: $primary;
+
       svg {
         transition: all 0.2s ease;
         position: relative;
@@ -33,7 +38,7 @@
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-right: 30px solid white;
+    border-right: 30px solid $surface;
     border-bottom-width: 30px;
     z-index: 2;
   }
@@ -41,8 +46,7 @@
   .pitch {
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 27px 40px rgba(0, 0, 0, 0.06),
-      0px 10px 24px rgba(0, 0, 0, 0.04), 0px 4px 10px rgba(0, 0, 0, 0.03);
+    background-color: $surface;
     line-height: 1.3rem;
   }
 
@@ -55,13 +59,13 @@
 
     a {
       margin: 8px;
-      color: #707070;
+      color: $textLight;
       position: relative;
       transition: all 0.2s ease;
       top: 0px;
 
       &:hover {
-        color: #363636;
+        color: $text;
         top: 1px;
       }
     }

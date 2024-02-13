@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .card {
   display: flex;
   flex-direction: column;
@@ -11,8 +13,10 @@
   }
 
   section {
-    background: #ffffff;
+    background: $surface;
     padding: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
     .logo {
       display: flex;
@@ -33,10 +37,10 @@
       transition: all ease 0.2s;
       width: 10px;
       height: 10px;
-      background-color: white;
-      border: solid 4px #4ec317;
+      background-color: $background;
+      border: solid 2px $primary;
       border-radius: 10px;
-      margin-left: -11px;
+      margin-left: -8px;
       flex-shrink: 0;
     }
 
@@ -45,7 +49,7 @@
     }
 
     .titleRight {
-      border-left: #4ec317 4px solid;
+      border-left: $primary 2px solid;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -79,30 +83,32 @@
     }
 
     &:hover {
-      background-color: #e5e5e5;
+      background-color: $surface;
 
       .dot {
-        background-color: #4ec317;
+        background-color: $primary;
       }
     }
   }
 
   &.expanded {
     .title {
-      background-color: #ffffff;
+      background-color: $surface;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
 
       .dot {
-        background-color: #4ec317;
+        background-color: $primary;
       }
 
       &:hover {
-        background-color: #e5e5e5;
+        background-color: $surface;
       }
     }
   }
 
   .content {
-    border-left: #4ec317 solid 4px;
+    border-left: $primary solid 2px;
     padding: 10px 20px;
     margin: 0 20px;
 
@@ -115,7 +121,8 @@
         display: inline-block;
         padding: 5px 10px;
         margin: 5px 10px;
-        background: #eaeaea;
+        background: $primary;
+        color: $onPrimary;
         border-radius: 3px;
       }
     }
