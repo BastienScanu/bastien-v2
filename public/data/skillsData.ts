@@ -30,7 +30,7 @@ const skillsData: Skill[] = [
         value: 95,
       },
       {
-        key: 'next',
+        key: 'nextjs',
         name: 'Next.js',
         value: 70,
       },
@@ -63,6 +63,11 @@ const skillsData: Skill[] = [
         key: 'nodejs',
         name: 'Node.js',
         value: 100,
+      },
+      {
+        key: 'nextjs',
+        name: 'NextJS',
+        value: 90,
       },
       {
         key: 'python',
@@ -105,6 +110,11 @@ const skillsData: Skill[] = [
         value: 80,
       },
       {
+        key: 'typeorm',
+        name: 'TypeORM',
+        value: 80,
+      },
+      {
         key: 'redis',
         name: 'Redis',
         value: 70,
@@ -117,6 +127,16 @@ const skillsData: Skill[] = [
       {
         key: 'docker',
         name: 'Docker',
+        value: 70,
+      },
+      {
+        key: 'gitlab',
+        name: 'Gitlab CI/CD',
+        value: 70,
+      },
+      {
+        key: 'jest',
+        name: 'Jest',
         value: 70,
       },
       {

@@ -10,7 +10,7 @@ const Skills = async ({ locale }: { locale: string }) => {
     <section id="skills">
       <h1>{t('title')}</h1>
       {skillsData.map((skill) => {
-        return <SkillSection key={skill.name} skill={skill} />
+        return <SkillSection key={skill.name} skill={skill} locale={locale} />
       })}
     </section>
   )

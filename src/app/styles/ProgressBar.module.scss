@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.progressBlock {
+  flex-grow: 1;
+
+  .progressTitle {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+
+  .progressBar {
+    height: 12px;
+    max-width: 300px;
+    background: $background;
+    border: 1px solid $surfaceLight;
+    border-radius: 7px;
+
+    .progressFill {
+      height: 10px;
+      background: $primary;
+      border: 1px solid $primary;
+      border-radius: 6px;
+    }
+  }
+}
