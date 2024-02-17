@@ -69,7 +69,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className={styles.rightMenu}>
-          <LanguageChanger/>
+          <LanguageChanger />
           <FontAwesomeIcon
             icon={faBars}
             className={styles.hamburger}

@@ -46,9 +46,10 @@
       "desc": "I was in charge of the design and development of a search module of targeted professionals.",
       "ul1": "design of microservice and its Rest API",
       "ul2": "write unit tests",
-      "ul3": "implement a user interface to launch new requests and display the results<br/>Design and implementation of a real-time notification system for our web application",
-      "ul4": "set up a publish/subscribe system with redis",
-      "ul5": "handle real-time events with socket.io"
+      "ul3": "implement a user interface to launch new requests and display the results",
+      "ul4": "Design and implementation of a real-time notification system for our web application",
+      "ul5": "set up a publish/subscribe system with redis",
+      "ul6": "handle real-time events with socket.io"
     },
     "website": "https://www.umi.us"
   },

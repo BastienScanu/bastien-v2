@@ -24,6 +24,21 @@
       align-items: flex-end;
       text-align: right;
     }
+
+    .xpLinks a {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: $textSubtle;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $primary;
+      }
+
+      svg {
+        margin-right: 5px;
+      }
+    }
   }
 
   .title {
@@ -124,6 +139,7 @@
         background: $primary;
         color: $onPrimary;
         border-radius: 3px;
+        line-height: 1.3rem;
       }
     }
   }

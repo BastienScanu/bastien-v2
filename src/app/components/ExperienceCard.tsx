@@ -11,8 +11,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../styles/ExperienceCard.module.scss'
-import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
+import SvgSprite from './SvgSprite'
 
 const ExperienceCard = ({ xp }: { xp: Experience }) => {
   const { t } = useTranslation('experience')
@@ -43,22 +43,17 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
       <section {...getCollapseProps()}>
         <div className="pure-g">
           <div className={styles.logo + ' pure-u-1-5'}>
-            <Image
-              src={`/images/xp/${xp.name.replace(/\d/, '')}.svg`}
-              height={50}
-              width={100}
-              alt={xp.name.replace(/\d/, '') + ' logo'}
-              style={{
-                maxWidth: '100%',
-                height: 'auto',
-              }}
+            <SvgSprite
+              sprite="logos"
+              name={xp.name.replace(/\d/, '')}
+              className={styles.logo}
             />
-            <p className="small">
+            <p className={styles.xpLinks}>
               <a href={xp.maps} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faLocationDot} />
                 {xp.location}
               </a>
-              <br />
+              {'  '}|{'  '}
               <a
                 href={t(`${xp.name}.website`)}
                 target="_blank"

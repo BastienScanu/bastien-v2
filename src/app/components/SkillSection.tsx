@@ -36,7 +36,7 @@ const SkillSection = async ({
                 className={'pure-u-1-1 pure-u-lg-1-2 ' + styles.skillLevel}
               >
                 <SvgSprite
-                  sprite="technos"
+                  sprite="logos"
                   name={techno.key}
                   className={styles.logo}
                 />
