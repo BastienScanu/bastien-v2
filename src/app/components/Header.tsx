@@ -12,60 +12,63 @@ import LanguageChanger from './LanguageChanger'
 
 const Header = () => {
   const { t } = useTranslation('header')
-
-  const [scrollY, setScrollY] = useState(0)
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY)
-    }
-
-    handleScroll()
-
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
-
   const [isMenuActive, setMenuActive] = useState(false)
 
   const handleMenu = () => {
     setMenuActive(!isMenuActive)
   }
 
+  const [activeSection, setActiveSection] = useState('hero')
+  const navItems = ['hero', 'about', 'skills', 'experience']
+
+  useEffect(() => {
+    const sections = navItems.map((item) => document.getElementById(item))
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (navItems.includes(entry.target.id)) {
+            setActiveSection(entry.target.id)
+          }
+        }
+      })
+    }, observerOptions)
+
+    sections?.forEach((section) => {
+      section && observer.observe(section)
+    })
+  }, [])
+
   return (
-    <header
-      className={styles.header + (scrollY > 50 ? '' : ' ' + styles.transparent)}
-    >
+    <header className={styles.header}>
       <div className={styles.content}>
         <div className={styles.logo}>
           <Link href="/">
             <Image
               src={`/images/layout/logo-texte.svg`}
-              height="70"
-              width="120"
+              height="54"
+              width="138"
               alt={'Logo Bastien Scanu'}
-              style={{
-                maxWidth: '100%',
-                height: 'auto',
-              }}
             />
           </Link>
         </div>
         <nav className={isMenuActive ? styles.active : ''}>
           <ul>
-            <li onClick={handleMenu}>
-              <Link href="/#home">{t('home')}</Link>
-            </li>
-            <li onClick={handleMenu}>
-              <Link href="/#about">{t('about')}</Link>
-            </li>
-            <li onClick={handleMenu}>
-              <Link href="/#skills">{t('skills')}</Link>
-            </li>
-            <li onClick={handleMenu}>
-              <Link href="/#experience">{t('experience')}</Link>
-            </li>
+            {navItems.map((item) => {
+              return (
+                <li
+                  className={activeSection === item ? styles.active : ''}
+                  onClick={handleMenu}
+                >
+                  <Link href={'/#' + item}>{t(item)}</Link>
+                </li>
+              )
+            })}
           </ul>
         </nav>
         <div className={styles.rightMenu}>

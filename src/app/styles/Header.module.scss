@@ -10,19 +10,18 @@
   box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.1);
 
   .content {
+    height: 58px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    .logo {
-      position: absolute;
-      left: 50px;
-    }
+    justify-content: space-between;
+    padding-right: $horizontalPadding;
+    padding-left: $horizontalPadding;
 
     .rightMenu {
-      position: absolute;
-      right: 50px;
+      button {
+        border: none;
+        width: auto;
+      }
 
       .hamburger {
         display: none;
@@ -31,11 +30,13 @@
 
     nav {
       align-self: center;
+
       ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
         list-style-type: none;
+        margin: 0;
 
         li {
           padding: 5px 15px;
@@ -43,6 +44,10 @@
 
           a {
             position: relative;
+          }
+
+          &.active a {
+            color: $primary;
           }
 
           a::before {
@@ -59,7 +64,8 @@
             transition: transform 0.3s ease-in-out;
           }
 
-          a:hover::before {
+          a:hover::before,
+          &.active a::before {
             transform-origin: left;
             transform: scaleX(1);
           }
@@ -83,7 +89,7 @@
         position: fixed;
         right: -100%;
         top: 75px;
-        background-color: #fff;
+        background-color: $background;
         width: 100%;
         border-radius: 10px;
         text-align: center;
@@ -97,16 +103,12 @@
         right: 0;
 
         li {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
+          margin-top: 15px;
         }
       }
 
-      .logo {
-        top: 0;
-      }
-
       .rightMenu {
-        top: 0;
         .hamburger {
           display: inline;
           cursor: pointer;
