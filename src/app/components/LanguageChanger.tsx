@@ -34,7 +34,7 @@ export default function LanguageChanger() {
   }
 
   return (
-    <button onClick={handleClick} className={styles.LanguageChanger}>
+    <button onClick={handleClick} className={styles.languageChanger}>
       {otherLocale.toUpperCase()}
     </button>
   )

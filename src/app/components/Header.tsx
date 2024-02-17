@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import LanguageChanger from './LanguageChanger'
+import SvgSprite from './SvgSprite'
 
 const Header = () => {
   const { t } = useTranslation('header')
@@ -47,16 +48,20 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <div className={styles.logo}>
-          <Link href="/">
-            <Image
-              src={`/images/layout/logo-texte.svg`}
-              height="54"
-              width="138"
-              alt={'Logo Bastien Scanu'}
+        <Link href="/">
+          <div className={styles.headerLogo}>
+            <SvgSprite
+              sprite="logos"
+              name="bastien"
+              className={styles.logo}
+              size={{ height: 54, width: 43 }}
             />
-          </Link>
-        </div>
+            <div className={styles.logoText}>
+              <span>Bastien</span>
+              <span>Scanu</span>
+            </div>
+          </div>
+        </Link>
         <nav className={isMenuActive ? styles.active : ''}>
           <ul>
             {navItems.map((item) => {
@@ -64,6 +69,7 @@ const Header = () => {
                 <li
                   className={activeSection === item ? styles.active : ''}
                   onClick={handleMenu}
+                  key={item}
                 >
                   <Link href={'/#' + item}>{t(item)}</Link>
                 </li>

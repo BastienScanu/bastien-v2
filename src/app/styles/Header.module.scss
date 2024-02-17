@@ -1,5 +1,7 @@
 @import './variables.scss';
 
+$headerHeight: 58px;
+
 .header {
   position: fixed;
   top: 0;
@@ -10,18 +12,40 @@
   box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.1);
 
   .content {
-    height: 58px;
+    height: $headerHeight;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: $horizontalPadding;
     padding-left: $horizontalPadding;
 
-    .rightMenu {
-      button {
-        border: none;
-        width: auto;
+    .headerLogo {
+      margin-top: 4px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .logoText {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-family: var(--font-jakarta);
+
+        :first-child {
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 0.6px;
+        }
+        :last-child {
+          font-size: 25px;
+          font-weight: 300;
+        }
       }
+    }
+
+    .rightMenu {
+      margin-left: 100px;
 
       .hamburger {
         display: none;
@@ -37,6 +61,7 @@
         justify-content: center;
         list-style-type: none;
         margin: 0;
+        padding: 0;
 
         li {
           padding: 5px 15px;
@@ -74,49 +99,49 @@
     }
   }
 }
-@media screen and (min-width: 45em) {
-  .transparent {
-    background: none;
-    box-shadow: none;
+
+@media screen and (max-width: 45em) {
+  .header .content {
+    nav {
+      position: fixed;
+      right: -100%;
+      top: $headerHeight;
+      background-color: $background;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+
+      ul {
+        flex-direction: column;
+      }
+    }
+
+    nav.active {
+      right: 0;
+
+      li {
+        font-size: 1.3rem;
+        margin: 10px;
+      }
+    }
+
+    .rightMenu {
+      margin-left: 0;
+
+      .hamburger {
+        display: inline;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 45em) {
-  .header {
-    height: 75px;
-    .content {
-      nav {
-        position: fixed;
-        right: -100%;
-        top: 75px;
-        background-color: $background;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        ul {
-          flex-direction: column;
-        }
-      }
-
-      nav.active {
-        right: 0;
-
-        li {
-          font-size: 1.3rem;
-          margin-top: 15px;
-        }
-      }
-
-      .rightMenu {
-        .hamburger {
-          display: inline;
-          cursor: pointer;
-          font-size: 1.5rem;
-          margin-top: 20px;
-          margin-left: 20px;
-        }
-      }
-    }
+@media screen and (max-width: 25em) {
+  .header .content .headerLogo .logoText {
+    display: none;
   }
 }
