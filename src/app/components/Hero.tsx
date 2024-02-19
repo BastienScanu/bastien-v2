@@ -6,21 +6,21 @@ import initTranslations from '../../i18n'
 const Hero = async ({ locale }: { locale: string }) => {
   const { t } = await initTranslations(locale, ['hero'])
   return (
-    <section id="hero">
-      <div className="pure-u-1-1 pure-u-md-1-2">
-        <AnimatedLogo />
+    <section id="hero" className={styles.hero}>
+      <div className={styles.logoContainer}>
+        <AnimatedLogo size={300} />
       </div>
-      <div className="pure-u-1-1 pure-u-md-1-2">
-        <p className={styles.title}>
-          {t('hi')}
-          <br />
+      <p className={styles.title}>
+        <span>{t('hi')}</span>
+        <br />
+        <span>
           {t('iam')} <span className="green">Bastien,</span>
-          <br />
-          {t('job1')}
-          <br />
-          {t('job2')}
-        </p>
-      </div>
+        </span>
+        <br />
+        <span>{t('job1')}</span>
+        <br />
+        <span>{t('job2')}</span>
+      </p>
     </section>
   )
 }

@@ -1,464 +1,97 @@
 import * as React from 'react'
 import AnimatedRectangle from './AnimatedRectangle'
+import Rectangle from '../models/Rectangle'
+import logoData from '../../../public/data/logoData'
 
-const AnimatedLogo = () => {
+const AnimatedLogo = ({ size }: { size: number }) => {
+  const originalLogoWidth = 159
+  const sizeFactor = size / originalLogoWidth
+  const rectangleHeight = 10 * sizeFactor
+  const spaceBetweenRectangles = 2.5 * sizeFactor
+  const spaceBetweenLines = 2 * sizeFactor
+
+  const generateAnimatedRectangle = (
+    previousRectangle: Rectangle | undefined,
+    rectangleData: {
+      width: number
+      color: string
+    },
+    pixelSpeed: number,
+    isNewline: boolean
+  ): Rectangle => {
+    if (!previousRectangle) {
+      return {
+        start: 0,
+        stop: rectangleData.width * pixelSpeed,
+        width: rectangleData.width * sizeFactor,
+        height: rectangleHeight,
+        x: 0,
+        y: 0,
+        color: rectangleData.color,
+      }
+    }
+
+    const start = previousRectangle.stop
+    const stop = start + rectangleData.width * pixelSpeed
+    const width = rectangleData.width * sizeFactor
+    const height = rectangleHeight
+    const x = isNewline
+      ? 0
+      : previousRectangle.x + previousRectangle.width + spaceBetweenRectangles
+    const y = isNewline
+      ? previousRectangle.y + rectangleHeight + spaceBetweenLines
+      : previousRectangle.y
+    const color = rectangleData.color
+    return { start, stop, width, height, x, y, color }
+  }
+
+  const generateAnimationData = (
+    logoData: { width: number; color: string }[][]
+  ): Rectangle[] => {
+    const animatedRectangles: Rectangle[] = []
+    let previousRectangle: Rectangle | undefined
+    const fullLength = logoData.reduce(
+      (prevLine, currLine) =>
+        prevLine +
+        currLine.reduce((prevRect, currRect) => prevRect + currRect.width, 0),
+      0
+    )
+    // We need to reach the 'fullLength px' at 100%, so each pixel represents 100/fullLength
+    const pixelSpeed = 100 / fullLength
+
+    for (let line of logoData) {
+      let isNewLine = true
+      for (const rectangleData of line) {
+        const animatedRectangle = generateAnimatedRectangle(
+          previousRectangle,
+          rectangleData,
+          pixelSpeed,
+          isNewLine
+        )
+        animatedRectangles.push(animatedRectangle)
+        previousRectangle = animatedRectangle
+        isNewLine = false
+      }
+    }
+
+    return animatedRectangles
+  }
+
+  const animationData = generateAnimationData(logoData)
+
   return (
     <svg
+      height={size * 1.22}
+      width={size}
       id="animatedLogo"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 2048 2048"
       shapeRendering="geometricPrecision"
       textRendering="geometricPrecision"
     >
-      <AnimatedRectangle
-        start={86.67}
-        stop={88.89}
-        width={404}
-        x={836}
-        y={1737}
-        color="#005e75"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={83.33}
-        stop={86.67}
-        width={586}
-        x={230}
-        y={1737}
-        color="#005e75"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={82.22}
-        stop={83.33}
-        width={292}
-        x={1108}
-        y={1634}
-        color="#00677e"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={80}
-        stop={82.22}
-        width={413}
-        x={675}
-        y={1634}
-        color="#00677e"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={77.78}
-        stop={80}
-        width={425}
-        x={230}
-        y={1634}
-        color="#00677e"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={76.67}
-        stop={77.78}
-        width={293}
-        x={1181}
-        y={1530}
-        color="#007186"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={75.56}
-        stop={76.67}
-        width={339}
-        x={822}
-        y={1530}
-        color="#007186"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={72.22}
-        stop={75.56}
-        width={572}
-        x={230}
-        y={1530}
-        color="#007186"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={68.89}
-        stop={71.11}
-        width={406}
-        x={1088}
-        y={1426}
-        color="#007989"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={66.67}
-        stop={68.89}
-        width={479}
-        x={596}
-        y={1426}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={65.56}
-        stop={66.67}
-        width={346}
-        x={230}
-        y={1426}
-        color="#007989"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={64.44}
-        stop={65.56}
-        width={356}
-        x={1182}
-        y={1322}
-        color="#00828d"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={63.33}
-        stop={64.44}
-        width={346}
-        x={816}
-        y={1322}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={62.22}
-        stop={63.33}
-        width={335}
-        x={460}
-        y={1322}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={61.11}
-        stop={62.22}
-        width={210}
-        x={230}
-        y={1322}
-        color="#00828d"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={60}
-        stop={61.11}
-        width={320}
-        x={1206}
-        y={1218}
-        color="#008b8c"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={58.89}
-        stop={60}
-        width={158}
-        x={1027}
-        y={1218}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={57.78}
-        stop={58.89}
-        width={352}
-        x={655}
-        y={1218}
-        color="#008b8c"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={56.67}
-        stop={57.78}
-        width={207}
-        x={428}
-        y={1218}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={55.56}
-        stop={56.67}
-        width={177}
-        x={230}
-        y={1218}
-        color="#008b8c"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={54.44}
-        stop={55.56}
-        width={309}
-        x={1209}
-        y={1115}
-        color="#00938b"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={53.33}
-        stop={54.44}
-        width={174}
-        x={1015}
-        y={1115}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={52.22}
-        stop={53.33}
-        width={358}
-        x={637}
-        y={1115}
-        color="#00938b"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={50}
-        stop={52.22}
-        width={387}
-        x={230}
-        y={1115}
-        color="#00938b"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={48.89}
-        stop={50}
-        width={302}
-        x={1172}
-        y={1011}
-        color="#009d85"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={47.78}
-        stop={48.89}
-        width={274}
-        x={878}
-        y={1011}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={46.67}
-        stop={47.78}
-        width={154}
-        x={704}
-        y={1011}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={45.56}
-        stop={46.67}
-        width={197}
-        x={487}
-        y={1011}
-        color="#009d85"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={44.44}
-        stop={45.56}
-        width={237}
-        x={230}
-        y={1011}
-        color="#009d85"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={43.33}
-        stop={44.44}
-        width={314}
-        x={1086}
-        y={908}
-        color="#00a67e"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={40}
-        stop={43.33}
-        width={541}
-        x={525}
-        y={908}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={38.89}
-        stop={40}
-        width={278}
-        x={227}
-        y={908}
-        color="#00a67e"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={35.56}
-        stop={38.89}
-        width={582}
-        x={827}
-        y={804}
-        color="#00ae75"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={34.44}
-        stop={35.56}
-        width={347}
-        x={460}
-        y={804}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={33.33}
-        stop={34.44}
-        width={210}
-        x={230}
-        y={804}
-        color="#00ae75"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={31.11}
-        stop={33.33}
-        width={423}
-        x={1049}
-        y={700}
-        color="#00b66a"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={28.89}
-        stop={31.11}
-        width={364}
-        x={659}
-        y={700}
-        color="#00b66a"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={27.78}
-        stop={28.89}
-        width={179}
-        x={460}
-        y={700}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={26.67}
-        stop={27.78}
-        width={210}
-        x={230}
-        y={700}
-        color="#00b66a"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={25.56}
-        stop={26.67}
-        width={264}
-        x={1202}
-        y={596}
-        color="#00be5c"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={24.44}
-        stop={25.56}
-        width={198}
-        x={983}
-        y={596}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={23.33}
-        stop={24.44}
-        width={306}
-        x={656}
-        y={596}
-        color="#00be5c"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={22.22}
-        stop={23.33}
-        width={208}
-        x={428}
-        y={596}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={21.11}
-        stop={22.22}
-        width={177}
-        x={230}
-        y={596}
-        color="#00be5c"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={20}
-        stop={21.11}
-        width={335}
-        x={1130}
-        y={492}
-        color="#00c549"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={17.78}
-        stop={20}
-        width={340}
-        x={769}
-        y={492}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={16.67}
-        stop={17.78}
-        width={261}
-        x={488}
-        y={492}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={15.56}
-        stop={16.67}
-        width={237}
-        x={230}
-        y={492}
-        color="#00c549"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={13.33}
-        stop={15.56}
-        width={399}
-        x={1024}
-        y={389}
-        color="#00cc35"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={11.11}
-        stop={13.33}
-        width={411}
-        x={592}
-        y={389}
-        color="#dadada"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={10}
-        stop={11.11}
-        width={342}
-        x={230}
-        y={389}
-        color="#00cc35"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={7.78}
-        stop={10}
-        width={434}
-        x={897}
-        y={286}
-        color="#1cd124"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={6.67}
-        stop={7.78}
-        width={302}
-        x={575}
-        y={286}
-        color="#1cd124"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={5.56}
-        stop={6.67}
-        width={325}
-        x={230}
-        y={286}
-        color="#1cd124"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={1.11}
-        stop={5.56}
-        width={651}
-        x={500}
-        y={182}
-        color="#3bd512"
-      ></AnimatedRectangle>
-      <AnimatedRectangle
-        start={0}
-        stop={1.11}
-        width={250}
-        x={230}
-        y={182}
-        color="#3bd512"
-      ></AnimatedRectangle>
+      {animationData.map((data: Rectangle) => {
+        return <AnimatedRectangle data={data} key={data.start} />
+      })}
     </svg>
   )
 }

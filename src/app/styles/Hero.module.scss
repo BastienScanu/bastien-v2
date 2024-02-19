@@ -1,47 +1,45 @@
-.title {
-  font-family: var(--font-jakarta);
-  font-size: 3rem;
-  line-height: 4rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin: auto;
-  width: fit-content;
-  height: 100vh;
+@import 'variables.scss';
 
-  @media screen and (max-width: 45em) {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+.hero {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='50' height='50' x='25' y='25'><path d='M0,2a2,2 0 1,0 4,0a2,2 0 1,0 -4,0' stroke='none' fill='hsla(100, 60%, 42%, 1)'/></pattern></defs><rect width='100%' height='100%' fill='url(%23a)'/></svg>");
+  background-attachment: fixed;
+
+  @media screen and (max-width: 48em) {
+    flex-direction: column;
   }
 
-  @media screen and (min-width: 60em) {
-    font-size: 3.5rem;
-    line-height: 4.5rem;
+  .logoContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-}
 
-.smartphone {
-  z-index: 11;
-  position: relative;
-  right: 50px;
-  top: 220px;
-}
+  .title {
+    font-family: var(--font-jakarta);
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
 
-.bigScreen {
-  z-index: 12;
-  position: relative;
-  right: 0;
-  top: -300px;
-}
+    span {
+      padding: 8px;
+      background-color: $surface;
+    }
 
-.laptop {
-  z-index: 13;
-  position: relative;
-  top: -600px;
-}
+    @media screen and (max-width: 48em) {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
 
-.mouse {
-  z-index: 14;
-  position: relative;
-  left: 250px;
-  top: -720px;
+    @media screen and (min-width: 60em) {
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+    }
+  }
 }

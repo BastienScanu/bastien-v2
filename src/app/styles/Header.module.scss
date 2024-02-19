@@ -1,7 +1,5 @@
 @import './variables.scss';
 
-$headerHeight: 58px;
-
 .header {
   position: fixed;
   top: 0;
@@ -20,7 +18,6 @@ $headerHeight: 58px;
     padding-left: $horizontalPadding;
 
     .headerLogo {
-      margin-top: 4px;
       display: flex;
       flex-direction: row;
       align-items: center;

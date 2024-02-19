@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: $background;
   scroll-behavior: smooth;
+  scroll-padding-top: $headerHeight;
 }
 
 html,
@@ -32,14 +33,22 @@ main {
   margin: auto;
   padding: 0;
   overflow: hidden;
+  margin-top: $headerHeight;
 }
 
 section {
-  width: 100%;
-  padding: $horizontalPadding;
+  width: calc(100% - 2 * $horizontalPadding);
+  padding-left: $horizontalPadding;
+  padding-right: $horizontalPadding;
 
   @media screen and (max-width: 60em) {
+    width: calc(100% - 40px);
     padding: 20px;
+  }
+
+  @media screen and (max-width: 45em) {
+    width: calc(100% - 20px);
+    padding: 10px;
   }
 }
 
@@ -75,12 +84,6 @@ h2 {
   &.small {
     width: 2rem;
     flex-grow: 0;
-  }
-}
-
-@media screen and (max-width: 45em) {
-  #hero {
-    padding-top: 100px;
   }
 }
 
@@ -120,6 +123,10 @@ h5 {
   color: $primary;
   text-transform: uppercase;
   margin: 0;
+
+  @media screen and (max-width: 48em) {
+    font-size: 0.7rem;
+  }
 }
 
 .small {
@@ -132,11 +139,6 @@ h5 {
   color: $textSubtle;
   text-transform: uppercase;
   margin: 8px 0;
-}
-
-#hero {
-  overflow: hidden;
-  padding-bottom: 200px;
 }
 
 #experience,
