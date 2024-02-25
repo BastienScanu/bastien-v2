@@ -53,7 +53,6 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
                 <FontAwesomeIcon icon={faLocationDot} />
                 {xp.location}
               </a>
-              {'  '}|{'  '}
               <a
                 href={t(`${xp.name}.website`)}
                 target="_blank"

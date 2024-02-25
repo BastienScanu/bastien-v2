@@ -8,7 +8,7 @@
     "type": "Ecole",
     "activity": "Cours"
   },
-  "website": "Site Internet",
+  "website": "Site Web",
   "ed": {
     "date": "Depuis Janvier 2022",
     "company": "Energies Demain",
@@ -51,14 +51,14 @@
       "ul5": "mise en place d'un système publish/subscribe avec redis",
       "ul6": "gestion des évènements en temps réel avec socket.io"
     },
-  "website": "https://www.umi.us"
+    "website": "https://www.umi.us"
   },
   "mozilla": {
     "date": "Juin 2013",
     "company": "Mozilla Firefox",
     "job": "Projet de contribution au logiciel libre",
     "desc": "Mozilla Firefox est un navigateur web libre et gratuit, développé et distribué par la Mozilla Foundation, avec l'aide de nombreux contributeurs bénévoles.",
-    "mission":  {
+    "mission": {
       "desc": "Dans une équipe de 4 étudiants sous la supervision d'un employé de la Mozilla Foundation, nous avons corrigés plusieurs bugs et implémenté de nouvelles fonctionnalités liées à la partie media du navigateur."
     },
     "website": "https://www.mozilla.org/fr/firefox/new/"
@@ -68,7 +68,7 @@
     "company": "ST Microelectronics",
     "job": "Stage opérateur en salle blanche",
     "desc": "STMicroelectronics est une société internationale qui développe, fabrique et commercialise des puces électroniques. Elle est l'un des tout premiers acteurs mondiaux du secteur économique de la production de semi-conducteurs.",
-    "mission":  {
+    "mission": {
       "desc": "Travail dans la salle blanche Crolles 300, sur la chaîne de production de wafers 300mm. En poste sur la \"speedline\": suivi des lots urgents de la production."
     },
     "website": "http://www.st.com/content/st_com/en/about/careers/st-locations/emea/france/crolles.html"
@@ -78,7 +78,7 @@
     "company": "FIB BarcelonaTech",
     "job": "Master in Informatics",
     "desc": "L'Université polytechnique de Catalogne (BarcelonaTech) est la plus grande université scientifique et technique de la Generalitat de Catalogne en Espagne. La Facultat d'Informàtica est le département dédié à l'informatique.",
-    "mission":  {
+    "mission": {
       "desc": "En échange universitaire (Erasmus) durant deux semestres, j'ai suivi le cursus du Master in Innovation and Research in Informatics : cours de réseau, de programmation (Javascript, Erlang) mais aussi de Machine Learning."
     },
     "website": "http://www.fib.upc.edu/"
@@ -88,7 +88,7 @@
     "company": "Grenoble INP Ensimag",
     "job": "Deuxième année d’école d’ingénieurs",
     "desc": "L’École Nationale Supérieure d’Informatique et de Mathématiques Appliquées est une grande école d’ingénieurs du groupe Grenoble INP, spécialisée en informatique, mathématiques et télécommunications.",
-    "mission":  {
+    "mission": {
       "desc": "J'ai pu appronfondir à l'ENSIMAG mes compétences en développement logiciel, sécurité des réseaux ou encore systèmes de gestion de base de données."
     },
     "website": "http://ensimag.grenoble-inp.fr/"
@@ -98,7 +98,7 @@
     "company": "Grenoble INP Phelma",
     "job": "Première année d’école d’ingénieurs",
     "desc": "L’École nationale supérieure de PHysique ÉLectronique MAtériaux est une grande école d’ingénieurs du groupe Grenoble INP qui offre une grande diversité de cursus, des technologies de l'information à la nanotechnologie.",
-    "mission":  {
+    "mission": {
       "desc": "Engagé dans le tronc commun PET (Physique, Électronique, Télécoms), j'ai suivi des cours portant sur des thèmes variés tels que l'électronique, la programmation en C ou encore le traitement du signal."
     },
     "website": "http://phelma.grenoble-inp.fr/"

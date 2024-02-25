@@ -40,6 +40,7 @@ section {
   width: calc(100% - 2 * $horizontalPadding);
   padding-left: $horizontalPadding;
   padding-right: $horizontalPadding;
+  min-height: 100vh;
 
   @media screen and (max-width: 60em) {
     width: calc(100% - 40px);
