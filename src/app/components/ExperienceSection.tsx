@@ -8,7 +8,7 @@ const ExperienceSection = async ({ locale }: { locale: string }) => {
   const { t } = await initTranslations(locale, ['experience'])
 
   return (
-    <section id="experience">
+    <section id="experience" className="globalSection">
       <h1>{t('title')}</h1>
 
       {experienceData.map((xp: Experience) => {

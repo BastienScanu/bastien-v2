@@ -15,7 +15,7 @@ const About = async ({ locale }: { locale: string }) => {
   const { t } = await initTranslations(locale, ['about'])
 
   return (
-    <section id="about">
+    <section id="about" className="globalSection">
       <div className={styles.content}>
         <div className={styles.portrait}>
           <Image

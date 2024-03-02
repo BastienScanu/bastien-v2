@@ -6,7 +6,7 @@ import initTranslations from '../../i18n'
 const Hero = async ({ locale }: { locale: string }) => {
   const { t } = await initTranslations(locale, ['hero'])
   return (
-    <section id="hero" className={styles.hero}>
+    <section id="hero" className={styles.hero + ' globalSection'}>
       <div className={styles.logoContainer}>
         <AnimatedLogo size={300} />
       </div>
