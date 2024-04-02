@@ -169,38 +169,14 @@ button {
   background: transparent;
   border-radius: 5px;
   position: relative;
-  overflow: hidden;
   cursor: pointer;
+  transition: all 0.25s ease-Out;
 
   &:hover {
-    .hoverContent {
-      left: 0;
+    background-color: $primary;
+
+    a {
+      color: $onPrimary;
     }
-
-    .buttonText {
-      left: 150px;
-    }
-  }
-
-  .buttonText {
-    position: relative;
-    left: 0;
-    transition: all 0.35s ease-Out;
-  }
-
-  .hoverContent {
-    width: 150px;
-    height: 40px;
-    background: $primary;
-    color: white;
-    left: -200px;
-    position: absolute;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.25s ease-Out;
-    bottom: 0;
-    font-size: 1.1rem;
   }
 }

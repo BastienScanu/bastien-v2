@@ -14,16 +14,14 @@
     a {
       color: $primary;
 
-      svg {
+      .arrow {
         transition: all 0.2s ease;
         position: relative;
-        left: 5px;
+        left: 2px;
       }
 
-      &:hover {
-        svg {
-          left: 10px;
-        }
+      &:hover .arrow {
+        left: 8px;
       }
     }
   }

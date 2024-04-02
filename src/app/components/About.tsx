@@ -8,7 +8,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import styles from '../styles/About.module.scss'
 import Link from 'next/link'
-import { faArrowRightLong, faDownload } from '@fortawesome/free-solid-svg-icons'
 import initTranslations from '../../i18n'
 
 const About = async ({ locale }: { locale: string }) => {
@@ -25,14 +24,7 @@ const About = async ({ locale }: { locale: string }) => {
             alt={'vectorized portrait of Bastien Scanu'}
           />
           <button>
-            <Link href={t('cvLink')}>
-              <div className="hoverContent">
-                <FontAwesomeIcon icon={faDownload} />
-              </div>
-            </Link>
-            <Link href={t('cvLink')}>
-              <span className="buttonText">{t('cv')}</span>
-            </Link>
+            <Link href={t('cvLink')}>{t('cv')}</Link>
           </button>
         </div>
         <div className={styles.triangle}></div>
@@ -47,8 +39,7 @@ const About = async ({ locale }: { locale: string }) => {
           </p>
           <p className={styles.siteLink}>
             <Link href="/site">
-              {t('website')}
-              <FontAwesomeIcon icon={faArrowRightLong} />
+              {t('website')} <span className={styles.arrow}>➜</span>
             </Link>
           </p>
         </div>
