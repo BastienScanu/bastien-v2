@@ -1,4 +1,4 @@
 {
   "title": "Devops",
-  "desc": "Used to work with the three main operating systems. Use of Docker in the professional context."
+  "desc": "In the course of my career, I've been able to build up my skills in the devops field, particularly on the subject of continuous integration and development (CI/CD). I've been working with Docker environments for 7 years, and have used various continuous deployment tools: Drone/rancher, Gitlab CI/CD, Github Actions... I've also used several frameworks to implement unit tests, integration tests and end-to-end tests in my projects."
 }

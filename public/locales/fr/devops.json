@@ -1,4 +1,4 @@
 {
   "title": "Devops",
-  "desc": "Habitué à travailler sous les trois principaux systèmes d'exploitation. Utilisation de Docker dans le cadre professionnel."
+  "desc": "Au cours de mon parcours professionnel, j'ai pu monter en compétences dans le domaine du devops, en particulier sur le sujet de l'intégration et du développement continus (CI/CD). Je travaille avec des environnements Docker depuis 7 ans, et ai utilisé divers outils de déploiements continus : Drone/rancher, Gitlab CI/CD, Github Actions... J'ai aussi utilisé plusieurs frameworks pour implémenter des tests unitaires, tests d'intégration et tests end-to-end dans mes projets."
 }

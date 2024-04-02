@@ -13,11 +13,12 @@
     "date": "Depuis Janvier 2022",
     "company": "Energies Demain",
     "job": "Développeur web full-stack",
-    "desc": "Accélérateur d’idées, conseil et acteur de terrain, Énergies Demain œuvre en faveur de la transition sociétale et écologique.Nous plaçons l’humain au cœur de notre projet d’entreprise.",
+    "desc": "Accélérateur d'idées, conseil et acteur de terrain, Énergies Demain se fixe pour mission d'expérimenter et accompagner les transitions pour un avenir durable.",
     "mission": {
       "desc": "Je travaille au sein de l'équipe développement web, pour concevoir et faire évoluer les outils web afin qu'ils répondent au mieux aux besoins de nos clients :",
-      "ul1": "Implémentation de nouvelles fonctionnalités et refonte de l’interface de l’outil d’ERP ",
-      "ul2": "Refactoring et modernisation du front-end de l’outil de cartographie et visualisation de données"
+      "ul1": "implémentation de nouvelles fonctionnalités et refonte de l'interface de l'outil d'ERP à destination des services territoriaux de rénovation",
+      "ul2": "refactoring et migration vers Angular du front-end de Siterre, outil de cartographie et visualisation de données territoriales",
+      "ul3": "conception et développement d'un outil de détection et suivi de la précarité énergétique sur le territoire de la Seine-Saint-Denis"
     },
     "website": "https://www.energies-demain.com"
   },
@@ -25,7 +26,7 @@
     "date": "Juillet 2015 - Décembre 2021",
     "company": "United Motion Ideas",
     "job": "Ingénieur conception et développement",
-    "desc": "UMI est l’outil de test marché dédié au succès de vos projets d’innovation. Nous boostons les interactions avec les acteurs de votre marché, parmi le milliard de professionnels atteignables grâce à nos algorithmes.",
+    "desc": "UMI est l'outil de test marché dédié au succès de vos projets d'innovation. Nous boostons les interactions avec les acteurs de votre marché, parmi le milliard de professionnels atteignables grâce à nos algorithmes.",
     "mission": {
       "desc": "En tant que développeur web full-stack, j'ai contribué au développement de l'application, depuis son lancement public jusqu'à fin 2021, année durant laquelle nous avons réalisé plus de 200 missions pour nos clients.",
       "ul1": "amélioration du module de recherche de professionnels : ciblage plus pertinent, volumes plus élevés, évaluation de la pertinence de nos résultats",
@@ -41,7 +42,7 @@
     "date": "Août 2014 - Juin 2015",
     "company": "United Motion Ideas",
     "job": "Stage de fin d'études",
-    "desc": "UMI est l’outil de test marché dédié au succès de vos projets d’innovation. Nous boostons les interactions avec les acteurs de votre marché, parmi le milliard de professionnels atteignables grâce à nos algorithmes.",
+    "desc": "UMI est l'outil de test marché dédié au succès de vos projets d'innovation. Nous boostons les interactions avec les acteurs de votre marché, parmi le milliard de professionnels atteignables grâce à nos algorithmes.",
     "mission": {
       "desc": "Lors de ce stage, j'ai pris en charge la conception et le développement d'un module de recherche de professionnels ciblés",
       "ul1": "conception d'un microservice et de son API Rest",
@@ -86,8 +87,8 @@
   "imag": {
     "date": "2012 - 2013",
     "company": "Grenoble INP Ensimag",
-    "job": "Deuxième année d’école d’ingénieurs",
-    "desc": "L’École Nationale Supérieure d’Informatique et de Mathématiques Appliquées est une grande école d’ingénieurs du groupe Grenoble INP, spécialisée en informatique, mathématiques et télécommunications.",
+    "job": "Deuxième année d'école d'ingénieurs",
+    "desc": "L'École Nationale Supérieure d'Informatique et de Mathématiques Appliquées est une grande école d'ingénieurs du groupe Grenoble INP, spécialisée en informatique, mathématiques et télécommunications.",
     "mission": {
       "desc": "J'ai pu appronfondir à l'ENSIMAG mes compétences en développement logiciel, sécurité des réseaux ou encore systèmes de gestion de base de données."
     },
@@ -96,8 +97,8 @@
   "phelma": {
     "date": "2011 - 2012",
     "company": "Grenoble INP Phelma",
-    "job": "Première année d’école d’ingénieurs",
-    "desc": "L’École nationale supérieure de PHysique ÉLectronique MAtériaux est une grande école d’ingénieurs du groupe Grenoble INP qui offre une grande diversité de cursus, des technologies de l'information à la nanotechnologie.",
+    "job": "Première année d'école d'ingénieurs",
+    "desc": "L'École nationale supérieure de PHysique ÉLectronique MAtériaux est une grande école d'ingénieurs du groupe Grenoble INP qui offre une grande diversité de cursus, des technologies de l'information à la nanotechnologie.",
     "mission": {
       "desc": "Engagé dans le tronc commun PET (Physique, Électronique, Télécoms), j'ai suivi des cours portant sur des thèmes variés tels que l'électronique, la programmation en C ou encore le traitement du signal."
     },

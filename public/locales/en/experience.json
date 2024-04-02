@@ -13,11 +13,12 @@
     "date": "Since January 2022",
     "company": "Energies Demain",
     "job": "Développeur web full-stack",
-    "desc": "As an ideas accelerator, consultant and field player, Énergies Demain works to promote the social and ecological transition. We place the human being at the heart of our business project.",
+    "desc": "As an ideas accelerator, consultant and field player, Énergies Demain's mission is to experiment with and support transitions towards a sustainable future.",
     "mission": {
       "desc": "I work in the web development team to design and develop web tools to best meet the needs of our customers:",
-      "ul1": "Implementation of new features and redesign of our ERP interface",
-      "ul2": "Refactoring and modernization of the front-end of our cartography and dataviz tool"
+      "ul1": "implementation of new functionalities and redesign of the ERP tool interface for local renovation departments",
+      "ul2": "refactoring and migration to Angular of the front-end of Siterre, a tool for mapping and visualizing territorial data",
+      "ul3": "design and development of a tool to detect and monitor fuel poverty in the Seine-Saint-Denis region"
     },
     "website": "https://www.energies-demain.com"
   },
