@@ -7,6 +7,7 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import ExperienceSection from '../components/ExperienceSection'
 import { Fragment } from 'react'
+import Website from '../components/Website'
 
 export interface Props {
   params: {
@@ -21,6 +22,7 @@ export default async function Home({ params: { locale } }: Props) {
       <About locale={locale} />
       <Skills locale={locale} />
       <ExperienceSection locale={locale} />
+      <Website locale={locale} />
     </Fragment>
   )
 }

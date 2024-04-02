@@ -20,7 +20,7 @@ const Header = () => {
   }
 
   const [activeSection, setActiveSection] = useState('hero')
-  const navItems = ['hero', 'about', 'skills', 'experience']
+  const navItems = ['hero', 'about', 'skills', 'experience', 'website']
 
   useEffect(() => {
     const sections = navItems.map((item) => document.getElementById(item))
