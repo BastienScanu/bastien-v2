@@ -2,7 +2,6 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import styles from '../styles/Header.module.scss'
 import { useEffect, useState } from 'react'
@@ -25,9 +24,10 @@ const Header = () => {
   useEffect(() => {
     const sections = navItems.map((item) => document.getElementById(item))
 
-    const observerOptions = {
+    const observerOptions: IntersectionObserverInit = {
       root: null,
       rootMargin: '0px',
+      threshold: 20,
     }
 
     const observer = new IntersectionObserver((entries) => {
