@@ -6,17 +6,15 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted
+    runs-on: ikoula
     steps:
       - uses: actions/checkout@v4
         with:
           ref: 'dev'
-          path: dev
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: Install NPM dependencies
-        working-directory: ./dev
         run: npm ci
       - uses: actions/cache@v4
         with:
@@ -27,7 +25,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
       - name: Build NextJS app
-        working-directory: ./dev
         run: npm run build
       - name: Start NextJS app
         run: pm2 reload dev
