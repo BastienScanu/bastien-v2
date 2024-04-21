@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from 'react'
 import Experience from '../models/Experience'
 import { useCollapse } from 'react-collapsed'
 import {

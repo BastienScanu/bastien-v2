@@ -1,4 +1,3 @@
-import * as React from 'react'
 import AnimatedRectangle from './AnimatedRectangle'
 import Rectangle from '../models/Rectangle'
 import logoData from '../../../public/data/logoData'

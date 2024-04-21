@@ -1,10 +1,9 @@
 'use client'
 
-import * as React from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import styles from '../styles/Blob.module.scss'
 import { RandomBlob } from '../models/RandomBlob'
-import { useState } from 'react'
 
 const Illustration = ({ name }: { name: string }) => {
   const size = 200

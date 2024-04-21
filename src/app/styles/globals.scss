@@ -26,6 +26,7 @@ a:visited {
 
 a:hover {
   color: $primary;
+  cursor: pointer;
 }
 
 main {
@@ -177,6 +178,24 @@ button {
 
     a {
       color: $onPrimary;
+    }
+  }
+}
+
+.arrowLink {
+  font-size: 0.9rem;
+
+  a {
+    color: $primary;
+
+    .arrow {
+      transition: all 0.2s ease;
+      position: relative;
+      left: 2px;
+    }
+
+    &:hover .arrow {
+      left: 8px;
     }
   }
 }

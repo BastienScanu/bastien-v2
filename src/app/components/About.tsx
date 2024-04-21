@@ -1,4 +1,3 @@
-import * as React from 'react'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -37,9 +36,9 @@ const About = async ({ locale }: { locale: string }) => {
             {t('pitch3')}
             <br />
           </p>
-          <p className={styles.siteLink}>
+          <p className="arrowLink">
             <Link href="/site">
-              {t('website')} <span className={styles.arrow}>➜</span>
+              {t('website')} <span className="arrow">➜</span>
             </Link>
           </p>
         </div>

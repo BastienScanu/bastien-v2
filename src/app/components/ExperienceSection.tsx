@@ -1,4 +1,3 @@
-import * as React from 'react'
 import experienceData from '../../../public/data/experienceData'
 import Experience from '../models/Experience'
 import ExperienceCard from './ExperienceCard'

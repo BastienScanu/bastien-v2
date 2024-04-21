@@ -1,4 +1,3 @@
-import * as React from 'react'
 import Skill from '../models/Skill'
 import styles from '../styles/SkillSection.module.scss'
 import Illustration from './Illustration'
@@ -10,9 +9,11 @@ import ProgressBar from './ProgressBar'
 const SkillSection = async ({
   skill,
   locale,
+  children,
 }: {
   skill: Skill
   locale: string
+  children?: React.ReactNode
 }) => {
   const { t } = await initTranslations(locale, [skill.name])
 
@@ -28,6 +29,7 @@ const SkillSection = async ({
           <div className="separationLine"></div>
         </div>
         <p>{t('desc')}</p>
+        {children}
         <div className="pure-g">
           {skill.technos.map((techno: Techno) => {
             return (

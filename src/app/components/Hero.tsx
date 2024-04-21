@@ -1,4 +1,3 @@
-import * as React from 'react'
 import styles from '../styles/Hero.module.scss'
 import AnimatedLogo from './AnimatedLogo'
 import initTranslations from '../../i18n'

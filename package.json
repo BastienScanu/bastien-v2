@@ -21,7 +21,8 @@
     "react-collapsed": "^4.1.2",
     "react-dom": "^18",
     "react-i18next": "^14.0.5",
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "yet-another-react-lightbox": "^3.17.3"
   },
   "devDependencies": {
     "@types/node": "^20",

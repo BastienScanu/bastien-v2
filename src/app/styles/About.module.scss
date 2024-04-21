@@ -7,25 +7,6 @@
   flex-direction: row;
   align-items: center;
 
-  .siteLink {
-    font-size: 0.9rem;
-    text-align: right;
-
-    a {
-      color: $primary;
-
-      .arrow {
-        transition: all 0.2s ease;
-        position: relative;
-        left: 2px;
-      }
-
-      &:hover .arrow {
-        left: 8px;
-      }
-    }
-  }
-
   .portrait {
     display: flex;
     flex-direction: column;

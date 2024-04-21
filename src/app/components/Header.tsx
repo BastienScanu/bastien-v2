@@ -1,10 +1,9 @@
 'use client'
 
-import * as React from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 import styles from '../styles/Header.module.scss'
-import { useEffect, useState } from 'react'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import LanguageChanger from './LanguageChanger'
@@ -27,7 +26,7 @@ const Header = () => {
     const observerOptions: IntersectionObserverInit = {
       root: null,
       rootMargin: '0px',
-      threshold: 20,
+      threshold: 0.2,
     }
 
     const observer = new IntersectionObserver((entries) => {

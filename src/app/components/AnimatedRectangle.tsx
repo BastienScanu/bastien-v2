@@ -1,11 +1,11 @@
-import * as React from 'react'
+import { Fragment } from 'react'
 import Rectangle from '../models/Rectangle'
 
 const AnimatedRectangle = ({ data }: { data: Rectangle }) => {
   let { start, stop, width, height, x, y, color } = data
   const id = `rectangle_${Math.round(x)}_${Math.round(y)}`
   return (
-    <React.Fragment>
+    <Fragment>
       <style>
         {`
       #${id} {
@@ -35,7 +35,7 @@ const AnimatedRectangle = ({ data }: { data: Rectangle }) => {
         transform={`translate(${x} ${y})`}
         fill={color}
       />
-    </React.Fragment>
+    </Fragment>
   )
 }
 

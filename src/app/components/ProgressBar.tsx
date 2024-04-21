@@ -1,4 +1,3 @@
-import * as React from 'react'
 import styles from '../styles/ProgressBar.module.scss'
 import initTranslations from '../../i18n'
 

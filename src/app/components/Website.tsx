@@ -1,6 +1,3 @@
-import * as React from 'react'
-import styles from '../styles/Website.module.scss'
-import Link from 'next/link'
 import initTranslations from '../../i18n'
 
 const Website = async ({ locale }: { locale: string }) => {
