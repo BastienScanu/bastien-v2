@@ -1,0 +1,54 @@
+.websiteContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .imageContainer {
+    position: relative;
+    width: 20%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      opacity: 0;
+    }
+
+    &:hover {
+      img {
+        filter: blur(3px);
+        transition: ease-in 0.2s;
+        opacity: 0.7;
+        transform: scale(0.95);
+      }
+
+      button {
+        opacity: 1;
+      }
+    }
+  }
+
+  .textContainer {
+    padding: 20px;
+    width: 80%;
+  }
+
+  @media screen and (max-width: 60em) {
+    .imageContainer {
+      width: 34%;
+    }
+    .textContainer {
+      width: 66%;
+    }
+  }
+
+  @media screen and (max-width: 48em) {
+    flex-direction: column-reverse;
+
+    .imageContainer,
+    .textContainer {
+      width: 100%;
+    }
+  }
+}

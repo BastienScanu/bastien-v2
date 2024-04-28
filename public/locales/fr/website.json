@@ -1,3 +1,9 @@
 {
-  "title": "A propos de ce site"
+  "title": "A propos de ce site",
+  "builtWith": "J’ai développé ce site web avec le framework Next.js, lui-même basé sur les frameworks React et Node.js. Les maquettes, le logo et les illustrations ont été réalisées sur Figma, les feuilles de style sont écrites en SCSS. Ce site est déployé automatiquement avec des Github Actions, et hébergé chez l’hébergeur français éco-responsable Ikoula.",
+  "source": "Le code source de ce site web est consultable sur ",
+  "github": "mon profil Github",
+  "dev": "Vous êtes sur la version de développement de mon site, qui contient potentiellement quelques bugs, pour afficher la version stable, rendez-vous sur",
+  "thanks": "Merci pour votre visite !",
+  "githubLink": "Voir le code"
 }

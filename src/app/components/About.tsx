@@ -37,7 +37,7 @@ const About = async ({ locale }: { locale: string }) => {
             <br />
           </p>
           <p className="arrowLink">
-            <Link href="/site">
+            <Link href={'/#website'}>
               {t('website')} <span className="arrow">➜</span>
             </Link>
           </p>

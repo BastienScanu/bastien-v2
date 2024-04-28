@@ -39,9 +39,7 @@ main {
 
 section.globalSection {
   width: calc(100% - 2 * $horizontalPadding);
-  padding-left: $horizontalPadding;
-  padding-right: $horizontalPadding;
-  min-height: 100vh;
+  padding: $verticalPadding $horizontalPadding;
 
   @media screen and (max-width: 60em) {
     width: calc(100% - 40px);
@@ -104,6 +102,7 @@ h2 {
 }
 
 #skills,
+#website,
 #hero {
   background-color: $surface;
 }
