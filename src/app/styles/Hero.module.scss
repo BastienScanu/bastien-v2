@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 .hero {
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 2 * $verticalPadding - $headerHeight);
   display: flex;
   align-items: center;
   justify-content: center;
