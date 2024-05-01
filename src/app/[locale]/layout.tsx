@@ -1,5 +1,4 @@
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import TranslationsProvider from '../components/TranslationsProvider'
 import initTranslations from '../../i18n'
 
@@ -7,7 +6,6 @@ const i18nNamespaces = [
   'common',
   'home',
   'header',
-  'footer',
   'about',
   'back',
   'database',
@@ -34,7 +32,6 @@ export default async function Layout({
     >
       <Header />
       <main className="pure-g">{children}</main>
-      <Footer locale={locale} />
     </TranslationsProvider>
   )
 }

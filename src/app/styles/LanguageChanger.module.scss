@@ -1,5 +1,11 @@
+@import 'variables';
+
 .languageChanger {
   border: none;
   margin: 0;
   width: 40px;
+
+  &:hover {
+    background-color: $surface;
+  }
 }
