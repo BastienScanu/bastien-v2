@@ -65,8 +65,8 @@ const skillsData: Skill[] = [
         value: 100,
       },
       {
-        key: 'nextjs',
-        name: 'NextJS',
+        key: 'nestjs',
+        name: 'NestJS',
         value: 90,
       },
       {
