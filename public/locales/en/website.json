@@ -3,7 +3,6 @@
   "builtWith": "I developed this website using the Next.js framework, itself based on the React and Node.js frameworks. The mock-ups, logo and illustrations were created using Figma, while the style sheets were written in SCSS. The site is automatically deployed with Github Actions, and hosted by the eco-responsible French host Ikoula.",
   "source": "The source code of this website can be seen on ",
   "github": "my Github profile",
-  "dev": "You are on the development version of my site, which potentially contains a few bugs. To display the stable version, go to",
   "thanks": "Thank you for your visit !",
   "githubLink": "See the code"
 }

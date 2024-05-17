@@ -1,6 +1,5 @@
 import initTranslations from '../../i18n'
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from '../styles/Website.module.scss'
 
 const Website = async ({ locale }: { locale: string }) => {
@@ -36,12 +35,6 @@ const Website = async ({ locale }: { locale: string }) => {
               href="https://github.com/BastienScanu/bastien-v2"
             >
               {t('github')}
-            </a>
-          </p>
-          <p>
-            {t('dev')}{' '}
-            <a target="_blank" href="https://www.bastien-scanu.com">
-              www.bastien-scanu.com
             </a>
           </p>
           <p>{t('thanks')}</p>
