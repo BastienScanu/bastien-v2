@@ -2,13 +2,6 @@
 
 import Experience from '../models/Experience'
 import { useCollapse } from 'react-collapsed'
-import {
-  faChevronUp,
-  faChevronDown,
-  faLocationDot,
-  faLink,
-} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../styles/ExperienceCard.module.scss'
 import { useTranslation } from 'react-i18next'
 import SvgSprite from './SvgSprite'
@@ -35,7 +28,7 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
                 <h4>{t(`${xp.name}.job`)}</h4>
               </div>
             </div>
-            <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} />
+            <span className={styles.chevron}>‹</span>
           </div>
         </div>
       </button>
@@ -49,16 +42,14 @@ const ExperienceCard = ({ xp }: { xp: Experience }) => {
             />
             <p className={styles.xpLinks}>
               <a href={xp.maps} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faLocationDot} />
-                {xp.location}
+                ⚑{xp.location}
               </a>
               <a
                 href={t(`${xp.name}.website`)}
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon={faLink} />
-                {t(`website`)}
+                🔗{t(`website`)}
               </a>
             </p>
           </div>

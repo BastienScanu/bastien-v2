@@ -4,8 +4,6 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 import styles from '../styles/Header.module.scss'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import LanguageChanger from './LanguageChanger'
 import SvgSprite from './SvgSprite'
 
@@ -78,11 +76,9 @@ const Header = () => {
         </nav>
         <div className={styles.rightMenu}>
           <LanguageChanger />
-          <FontAwesomeIcon
-            icon={faBars}
-            className={styles.hamburger}
-            onClick={handleMenu}
-          />
+          <span className={styles.hamburger} onClick={handleMenu}>
+            ☰
+          </span>
         </div>
       </div>
     </header>

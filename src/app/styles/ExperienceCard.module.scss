@@ -66,6 +66,12 @@
     border-radius: 10px;
     transition: all ease 0.2s;
 
+    .chevron {
+      font-size: 30px;
+      transition: all ease 0.2s;
+      transform: rotate(-90deg);
+    }
+
     .dot {
       transition: all ease 0.2s;
       width: 10px;
@@ -129,6 +135,10 @@
       background-color: $surface;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
+
+      .chevron {
+        transform: rotate(90deg);
+      }
 
       .dot {
         background-color: $primary;

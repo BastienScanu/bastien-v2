@@ -1,13 +1,8 @@
 import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faTwitter,
-  faGithub,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons'
 import styles from '../styles/About.module.scss'
 import Link from 'next/link'
 import initTranslations from '../../i18n'
+import SvgSprite from './SvgSprite'
 
 const About = async ({ locale }: { locale: string }) => {
   const { t } = await initTranslations(locale, ['about'])
@@ -48,21 +43,22 @@ const About = async ({ locale }: { locale: string }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <SvgSprite
+              sprite="logos"
+              name="linkedin"
+              size={{ width: 20, height: 20 }}
+            />
           </a>
           <a
             href="https://www.github.com/BastienScanu"
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://www.twitter.com/BastienScanu"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faTwitter} />
+            <SvgSprite
+              sprite="logos"
+              name="github"
+              size={{ width: 20, height: 20 }}
+            />
           </a>
         </div>
       </div>
