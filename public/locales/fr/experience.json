@@ -26,7 +26,7 @@
     "date": "Juillet 2015 - Décembre 2021",
     "company": "United Motion Ideas",
     "job": "Ingénieur conception et développement",
-    "desc": "UMI est l'outil de test marché dédié au succès de vos projets d'innovation. Nous boostons les interactions avec les acteurs de votre marché, parmi le milliard de professionnels atteignables grâce à nos algorithmes.",
+    "desc": "UMI est l'outil de test marché dédié au succès de vos projets d'innovation, qui permet de booster les interactions avec les acteurs de votre marché, parmi le milliard de professionnels atteignables grâce à nos algorithmes.",
     "mission": {
       "desc": "En tant que développeur web full-stack, j'ai contribué au développement de l'application, depuis son lancement public jusqu'à fin 2021, année durant laquelle nous avons réalisé plus de 200 missions pour nos clients.",
       "ul1": "amélioration du module de recherche de professionnels : ciblage plus pertinent, volumes plus élevés, évaluation de la pertinence de nos résultats",
@@ -42,7 +42,7 @@
     "date": "Août 2014 - Juin 2015",
     "company": "United Motion Ideas",
     "job": "Stage de fin d'études",
-    "desc": "UMI est l'outil de test marché dédié au succès de vos projets d'innovation. Nous boostons les interactions avec les acteurs de votre marché, parmi le milliard de professionnels atteignables grâce à nos algorithmes.",
+    "desc": "UMI est l'outil de test marché dédié au succès de vos projets d'innovationqui permet de booster les interactions avec les acteurs de votre marché, parmi le milliard de professionnels atteignables grâce à nos algorithmes.",
     "mission": {
       "desc": "Lors de ce stage, j'ai pris en charge la conception et le développement d'un module de recherche de professionnels ciblés",
       "ul1": "conception d'un microservice et de son API Rest",
@@ -60,7 +60,7 @@
     "job": "Projet de contribution au logiciel libre",
     "desc": "Mozilla Firefox est un navigateur web libre et gratuit, développé et distribué par la Mozilla Foundation, avec l'aide de nombreux contributeurs bénévoles.",
     "mission": {
-      "desc": "Dans une équipe de 4 étudiants sous la supervision d'un employé de la Mozilla Foundation, nous avons corrigés plusieurs bugs et implémenté de nouvelles fonctionnalités liées à la partie media du navigateur."
+      "desc": "Dans une équipe de 4 étudiants sous la supervision d'un employé de la Mozilla Foundation, nous avons corrigé plusieurs bugs et implémenté de nouvelles fonctionnalités liées à la partie media du navigateur."
     },
     "website": "https://www.mozilla.org/fr/firefox/new/"
   },
@@ -70,7 +70,7 @@
     "job": "Stage opérateur en salle blanche",
     "desc": "STMicroelectronics est une société internationale qui développe, fabrique et commercialise des puces électroniques. Elle est l'un des tout premiers acteurs mondiaux du secteur économique de la production de semi-conducteurs.",
     "mission": {
-      "desc": "Travail dans la salle blanche Crolles 300, sur la chaîne de production de wafers 300mm. En poste sur la \"speedline\": suivi des lots urgents de la production."
+      "desc": "J'ai travaillé durant 2 mois dans la salle blanche Crolles 300, sur la chaîne de production de wafers 300mm. J'étais en poste sur la \"speedline\", qui assure le suivi des lots urgents de la production."
     },
     "website": "http://www.st.com/content/st_com/en/about/careers/st-locations/emea/france/crolles.html"
   },

@@ -2,61 +2,6 @@ import Skill from '../../src/app/models/Skill'
 
 const skillsData: Skill[] = [
   {
-    name: 'design',
-    technos: [
-      {
-        key: 'photoshop',
-        name: 'Photoshop',
-        value: 70,
-      },
-      {
-        key: 'sketch',
-        name: 'Sketch',
-        value: 75,
-      },
-      {
-        key: 'figma',
-        name: 'Figma',
-        value: 80,
-      },
-    ],
-  },
-  {
-    name: 'front',
-    technos: [
-      {
-        key: 'angular',
-        name: 'Angular',
-        value: 95,
-      },
-      {
-        key: 'nextjs',
-        name: 'Next.js',
-        value: 70,
-      },
-      {
-        key: 'react',
-        name: 'React',
-        value: 80,
-      },
-      {
-        key: 'html',
-        name: 'HTML5',
-        value: 100,
-      },
-      {
-        key: 'css',
-        name: 'CSS3',
-        value: 90,
-      },
-      {
-        key: 'sass',
-        name: 'Sass',
-        value: 90,
-      },
-    ],
-  },
-  {
     name: 'back',
     technos: [
       {
@@ -93,6 +38,41 @@ const skillsData: Skill[] = [
         key: 'kafka',
         name: 'Apache Kafka',
         value: 70,
+      },
+    ],
+  },
+  {
+    name: 'front',
+    technos: [
+      {
+        key: 'angular',
+        name: 'Angular',
+        value: 95,
+      },
+      {
+        key: 'nextjs',
+        name: 'Next.js',
+        value: 70,
+      },
+      {
+        key: 'react',
+        name: 'React',
+        value: 80,
+      },
+      {
+        key: 'html',
+        name: 'HTML5',
+        value: 100,
+      },
+      {
+        key: 'css',
+        name: 'CSS3',
+        value: 90,
+      },
+      {
+        key: 'sass',
+        name: 'Sass',
+        value: 90,
       },
     ],
   },
@@ -142,6 +122,26 @@ const skillsData: Skill[] = [
       {
         key: 'bash',
         name: 'Bash / SSH',
+        value: 70,
+      },
+    ],
+  },
+  {
+    name: 'design',
+    technos: [
+      {
+        key: 'photoshop',
+        name: 'Photoshop',
+        value: 65,
+      },
+      {
+        key: 'sketch',
+        name: 'Sketch',
+        value: 60,
+      },
+      {
+        key: 'figma',
+        name: 'Figma',
         value: 70,
       },
     ],
