@@ -10,6 +10,7 @@
   .portrait {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .triangle {
@@ -54,9 +55,8 @@
   .content {
     flex-direction: column;
 
-    .portrait {
-      flex-direction: row;
-      align-items: center;
+    .triangle {
+      display: none;
     }
 
     .links {
@@ -69,7 +69,6 @@
   .content {
     .portrait {
       flex-direction: column;
-      align-items: center;
     }
   }
 }
